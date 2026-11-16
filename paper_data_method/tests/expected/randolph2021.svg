@@ -1,0 +1,142 @@
+<svg width="100%" viewBox="0 0 680 1479" role="img"><title>Randolph 2021 数据、实验方法与分析方法</title><desc>L1 source, L2 sample with in vitro / in vivo tag, L3 assay method, L4 analysis method</desc>
+<g><rect class="box" x="2" y="604.5" width="50" height="40" rx="8" stroke-width="0.5"/><text class="th" x="27" y="624.5" text-anchor="middle" dominant-baseline="central">本文</text></g>
+<g><rect class="box" x="2" y="1176" width="50" height="40" rx="8" stroke-width="0.5"/><text class="th" x="27" y="1196" text-anchor="middle" dominant-baseline="central">外部</text></g>
+<path d="M52 624.5C56 624.5 56 293 60 293" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g><rect class="box" x="60" y="269" width="228" height="48" rx="8" stroke-width="0.5"/><text class="th" x="70" y="284" dominant-baseline="central">PBMC (mock/IAV, 6 hpi)</text><text class="th" x="278" y="284" text-anchor="end" dominant-baseline="central" style="fill:var(--text-success)">体外</text><text class="ts" x="70" y="304" dominant-baseline="central">[90 男性 · 180 样本 · 235,161 细胞]</text></g>
+<path d="M288 293C293 293 293 27 298 27" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-red"><rect x="298" y="14" width="168" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="27" dominant-baseline="central">病毒株制备 (Cal/04/09)</text></g>
+<path d="M288 293C293 293 293 61 298 61" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-coral"><rect x="298" y="48" width="168" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="61" dominant-baseline="central">IAV 感染 (MOI 0.5, 6 hpi)</text></g>
+<path d="M288 293L298 293" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-purple"><rect x="298" y="280" width="168" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="293" dominant-baseline="central">scRNA-seq</text></g>
+<path d="M466 293C471 293 471 93 476 93" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-purple"><rect x="476" y="82" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="93" dominant-baseline="central">细胞聚类 + UMAP (8 类)</text></g>
+<path d="M466 293C471 293 471 118 476 118" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-purple"><rect x="476" y="107" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="118" dominant-baseline="central">pseudobulk 汇总 + PCA</text></g>
+<path d="M466 293C471 293 471 143 476 143" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-purple"><rect x="476" y="132" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="143" dominant-baseline="central">limma 差异表达 (IAV vs mock)</text></g>
+<path d="M466 293C471 293 471 168 476 168" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-purple"><rect x="476" y="157" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="168" dominant-baseline="central">应答相关性 (Pearson)</text></g>
+<path d="M466 293C471 293 471 193 476 193" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-purple"><rect x="476" y="182" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="193" dominant-baseline="central">特异性评分 (specificity)</text></g>
+<path d="M466 293C471 293 471 218 476 218" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-purple"><rect x="476" y="207" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="218" dominant-baseline="central">IAV 转录本定量 (CPM)</text></g>
+<path d="M466 293C471 293 471 243 476 243" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-purple"><rect x="476" y="232" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="243" dominant-baseline="central">popDE 回归 (表达 ~ 祖源)</text></g>
+<path d="M466 293C471 293 471 268 476 268" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-purple"><rect x="476" y="257" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="268" dominant-baseline="central">mash 多变量收缩 (lfsr)</text></g>
+<path d="M466 293L476 293" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-purple"><rect x="476" y="282" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="293" dominant-baseline="central">popDR (应答幅度 ~ 祖源)</text></g>
+<path d="M466 293C471 293 471 318 476 318" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-purple"><rect x="476" y="307" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="318" dominant-baseline="central">IFN score ~ 祖源 (Fisher)</text></g>
+<path d="M466 293C471 293 471 343 476 343" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-purple"><rect x="476" y="332" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="343" dominant-baseline="central">IFN score ~ IAV 转录本</text></g>
+<path d="M466 293C471 293 471 368 476 368" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-purple"><rect x="476" y="357" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="368" dominant-baseline="central">cis-eQTL 作图 (±100 kb)</text></g>
+<path d="M466 293C471 293 471 393 476 393" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-purple"><rect x="476" y="382" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="393" dominant-baseline="central">eGene 富集 popDE (logistic)</text></g>
+<path d="M466 293C471 293 471 418 476 418" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-purple"><rect x="476" y="407" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="418" dominant-baseline="central">cis 预测 vs 观察祖源效应</text></g>
+<path d="M466 293C471 293 471 443 476 443" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-purple"><rect x="476" y="432" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="443" dominant-baseline="central">多基因选择检验 (置换)</text></g>
+<path d="M466 293C471 293 471 468 476 468" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-purple"><rect x="476" y="457" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="468" dominant-baseline="central">回归掉 top cis-eQTL</text></g>
+<path d="M466 293C471 293 471 493 476 493" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-purple"><rect x="476" y="482" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="493" dominant-baseline="central">RP eGene ~ IAV 转录本</text></g>
+<path d="M288 293C293 293 293 525 298 525" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-blue"><rect x="298" y="512" width="168" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="525" dominant-baseline="central">bulk RNA-seq (同样本)</text></g>
+<path d="M466 525L476 525" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-blue"><rect x="476" y="514" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="525" dominant-baseline="central">eGene 效应量验证 (adj R² 0.71)</text></g>
+<path d="M288 293C293 293 293 559 298 559" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-blue"><rect x="298" y="546" width="168" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="559" dominant-baseline="central">TM3seq 文库制备 (Tn5) ?</text></g>
+<path d="M52 624.5C56 624.5 56 641.5 60 641.5" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g><rect class="box" x="60" y="617.5" width="228" height="48" rx="8" stroke-width="0.5"/><text class="th" x="70" y="632.5" dominant-baseline="central">高/低 IFN 应答者 (IAV)</text><text class="th" x="278" y="632.5" text-anchor="end" dominant-baseline="central" style="fill:var(--text-success)">体外</text><text class="ts" x="70" y="652.5" dominant-baseline="central">[20 人 (高/低各 10) · 8 个时点]</text></g>
+<path d="M288 641.5C293 641.5 293 597 298 597" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-coral"><rect x="298" y="584" width="168" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="597" dominant-baseline="central">IAV 感染 (重新感染)</text></g>
+<path d="M466 597L476 597" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-coral"><rect x="476" y="586" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="597" dominant-baseline="central">按 IFN score 选高/低各 10 人</text></g>
+<path d="M288 641.5L298 641.5" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-pink"><rect x="298" y="628.5" width="168" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="641.5" dominant-baseline="central">Luminex：IFN-α2 / IFN-β</text></g>
+<path d="M466 641.5C471 641.5 471 629 476 629" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-pink"><rect x="476" y="618" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="629" dominant-baseline="central">高 vs 低应答者 (Mann-Whitney)</text></g>
+<path d="M466 641.5C471 641.5 471 654 476 654" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-pink"><rect x="476" y="643" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="654" dominant-baseline="central">IFN-α2/β 倍数差 (12 hpi 起)</text></g>
+<path d="M288 641.5C293 641.5 293 686 298 686" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-teal"><rect x="298" y="673" width="168" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="686" dominant-baseline="central">噬斑实验 (24/48 hpi)</text></g>
+<path d="M466 686L476 686" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-teal"><rect x="476" y="675" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="686" dominant-baseline="central">高 vs 低应答者滴度 (M-W U)</text></g>
+<path d="M52 624.5C56 624.5 56 747 60 747" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g><rect class="box" x="60" y="723" width="228" height="48" rx="8" stroke-width="0.5"/><text class="th" x="70" y="738" dominant-baseline="central">供体血清 (基线)</text><text class="th" x="278" y="738" text-anchor="end" dominant-baseline="central" style="fill:var(--text-danger)">体内</text><text class="ts" x="70" y="758" dominant-baseline="central">[人数见 table S1]</text></g>
+<path d="M288 747L298 747" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-green"><rect x="298" y="734" width="168" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="747" dominant-baseline="central">IgG 滴度检测 (Cal/04/09)</text></g>
+<path d="M466 747C471 747 471 722 476 722" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-green"><rect x="476" y="711" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="722" dominant-baseline="central">IgG ~ 祖源 (无关)</text></g>
+<path d="M466 747L476 747" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-green"><rect x="476" y="736" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="747" dominant-baseline="central">IgG ~ IAV 应答 (无关)</text></g>
+<path d="M466 747C471 747 471 772 476 772" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-green"><rect x="476" y="761" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="772" dominant-baseline="central">IgG ~ HLA 基因型 (无关)</text></g>
+<path d="M52 624.5C56 624.5 56 846 60 846" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g><rect class="box" x="60" y="822" width="228" height="48" rx="8" stroke-width="0.5"/><text class="th" x="70" y="837" dominant-baseline="central">供体基因组 DNA (基线)</text><text class="th" x="278" y="837" text-anchor="end" dominant-baseline="central" style="fill:var(--text-danger)">体内</text><text class="ts" x="70" y="857" dominant-baseline="central">[89 人成功基因分型]</text></g>
+<path d="M288 846C293 846 293 818.5 298 818.5" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-amber"><rect x="298" y="805.5" width="168" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="818.5" dominant-baseline="central">WGS 全基因组测序</text></g>
+<path d="M466 818.5C471 818.5 471 806 476 806" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-amber"><rect x="476" y="795" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="806" dominant-baseline="central">祖源成分比例估计 (欧/非)</text></g>
+<path d="M466 818.5C471 818.5 471 831 476 831" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-amber"><rect x="476" y="820" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="831" dominant-baseline="central">基因型 (供 eQTL 作图)</text></g>
+<path d="M288 846C293 846 293 873.5 298 873.5" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-amber"><rect x="298" y="860.5" width="168" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="873.5" dominant-baseline="central">HLA 基因型；LoF 筛查 ?</text></g>
+<path d="M466 873.5C471 873.5 471 861 476 861" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-amber"><rect x="476" y="850" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="861" dominant-baseline="central">HLA 分型 (供 IgG 关联)</text></g>
+<path d="M466 873.5C471 873.5 471 886 476 886" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-amber"><rect x="476" y="875" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="886" dominant-baseline="central">IFN 缺陷基因 LoF 筛查 (20 人)</text></g>
+<path d="M52 624.5C56 624.5 56 956 60 956" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g><rect class="box" x="60" y="932" width="228" height="48" rx="8" stroke-width="0.5"/><text class="th" x="70" y="947" dominant-baseline="central">原始与处理数据存档</text><text class="th" x="278" y="947" text-anchor="end" dominant-baseline="central" style="fill:var(--text-secondary)">存档</text><text class="ts" x="70" y="967" dominant-baseline="central">[公共数据库 · 3 处]</text></g>
+<path d="M288 956C293 956 293 922 298 922" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-gray"><rect x="298" y="909" width="380" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="922" dominant-baseline="central">GEO GSE162632：FASTQ、RNA-seq 计数</text></g>
+<path d="M288 956L298 956" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-gray"><rect x="298" y="943" width="380" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="956" dominant-baseline="central">SRA PRJNA736483：全基因组测序数据</text></g>
+<path d="M288 956C293 956 293 990 298 990" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-gray"><rect x="298" y="977" width="380" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="990" dominant-baseline="central">Zenodo 10.5281/zenodo.4273999：处理数据、脚本</text></g>
+<path d="M52 1196C56 1196 56 1057 60 1057" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g><rect class="box" x="60" y="1033" width="228" height="48" rx="8" stroke-width="0.5"/><text class="th" x="70" y="1048" dominant-baseline="central">单核细胞 (mock/IAV)</text><text class="th" x="278" y="1048" text-anchor="end" dominant-baseline="central" style="fill:var(--text-success)">体外</text><text class="ts" x="70" y="1068" dominant-baseline="central">[欧/非洲裔供体；n 见 Quach 2016]</text></g>
+<path d="M288 1057C293 1057 293 1040 298 1040" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-coral"><rect x="298" y="1027" width="168" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="1040" dominant-baseline="central">IAV 感染 ?</text></g>
+<path d="M288 1057C293 1057 293 1074 298 1074" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-blue"><rect x="298" y="1061" width="168" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="1074" dominant-baseline="central">bulk RNA-seq</text></g>
+<path d="M466 1074L476 1074" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-blue"><rect x="476" y="1063" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="1074" dominant-baseline="central">popDE 一致性 (r 0.50–0.66)</text></g>
+<path d="M52 1196C56 1196 56 1177 60 1177" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g><rect class="box" x="60" y="1153" width="228" height="48" rx="8" stroke-width="0.5"/><text class="th" x="70" y="1168" dominant-baseline="central">COVID 患者 PBMC (WOS)</text><text class="th" x="278" y="1168" text-anchor="end" dominant-baseline="central" style="fill:var(--text-danger)">体内</text><text class="ts" x="70" y="1188" dominant-baseline="central">[129 人 · 505,616 细胞]</text></g>
+<path d="M288 1177C293 1177 293 1160 298 1160" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-purple"><rect x="298" y="1147" width="168" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="1160" dominant-baseline="central">scRNA-seq</text></g>
+<path d="M466 1160C471 1160 471 1110 476 1110" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-purple"><rect x="476" y="1099" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="1110" dominant-baseline="central">重症关联基因 (校正协变量)</text></g>
+<path d="M466 1160C471 1160 471 1135 476 1135" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-purple"><rect x="476" y="1124" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="1135" dominant-baseline="central">重症基因 × popDE (Fisher+置换)</text></g>
+<path d="M466 1160L476 1160" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-purple"><rect x="476" y="1149" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="1160" dominant-baseline="central">富集曲线 (按 popDE 效应量)</text></g>
+<path d="M466 1160C471 1160 471 1185 476 1185" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-purple"><rect x="476" y="1174" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="1185" dominant-baseline="central">祖源方向偏向 (卡方检验)</text></g>
+<path d="M466 1160C471 1160 471 1210 476 1210" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-purple"><rect x="476" y="1199" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="1210" dominant-baseline="central">S100 基因 ~ 祖源 / WOS (回归)</text></g>
+<path d="M288 1177C293 1177 293 1242 298 1242" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-gray"><rect x="298" y="1229" width="168" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="1242" dominant-baseline="central">WOS 临床分级</text></g>
+<path d="M52 1196C56 1196 56 1335 60 1335" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g><rect class="box" x="60" y="1311" width="228" height="48" rx="8" stroke-width="0.5"/><text class="th" x="70" y="1326" dominant-baseline="central">基因集与注释资源</text><text class="th" x="278" y="1326" text-anchor="end" dominant-baseline="central" style="fill:var(--text-secondary)">注释</text><text class="ts" x="70" y="1346" dominant-baseline="central">[3 类]</text></g>
+<path d="M288 1335C293 1335 293 1290.5 298 1290.5" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-gray"><rect x="298" y="1277.5" width="168" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="1290.5" dominant-baseline="central">MSigDB Hallmark 基因集</text></g>
+<path d="M466 1290.5C471 1290.5 471 1278 476 1278" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-gray"><rect x="476" y="1267" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="1278" dominant-baseline="central">GSEA (Hallmark 富集)</text></g>
+<path d="M466 1290.5C471 1290.5 471 1303 476 1303" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-gray"><rect x="476" y="1292" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="1303" dominant-baseline="central">IFN score (IFN-α/γ 基因集)</text></g>
+<path d="M288 1335C293 1335 293 1345.5 298 1345.5" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-gray"><rect x="298" y="1332.5" width="168" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="1345.5" dominant-baseline="central">GO 术语 / ClueGO</text></g>
+<path d="M466 1345.5C471 1345.5 471 1333 476 1333" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-gray"><rect x="476" y="1322" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="1333" dominant-baseline="central">ClueGO 超几何检验 (FDR&lt;0.01)</text></g>
+<path d="M466 1345.5C471 1345.5 471 1358 476 1358" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-gray"><rect x="476" y="1347" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="1358" dominant-baseline="central">GO 项方向性置换检验</text></g>
+<path d="M288 1335C293 1335 293 1390 298 1390" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-gray"><rect x="298" y="1377" width="168" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="1390" dominant-baseline="central">IFN 缺陷基因 (Zhang 2020)</text></g>
+<text class="th" x="12" y="1433" dominant-baseline="central" style="fill:var(--text-success)">体外</text><text class="th" x="52" y="1433" dominant-baseline="central" style="fill:var(--text-danger)">体内</text><text class="ts" x="96" y="1433" dominant-baseline="central">字色 = 样本类型；框色 = 实验 / 测序方法（灰 = 存档、注释、临床分级）</text>
+<text class="ts" x="12" y="1455" dominant-baseline="central">三级 = 实验 / 测序方法；四级 = 分析方法；名称末尾 ? = 正文未明说，为推断</text>
+</svg>

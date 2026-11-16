@@ -1,0 +1,291 @@
+<svg width="100%" viewBox="0 0 680 2705" role="img"><title>Liu 2025 Cell 数据、实验方法与分析方法</title><desc>L1 source, L2 sample with in vitro / in vivo tag, L3 assay method, L4 analysis method</desc>
+<g><rect class="box" x="2" y="1081.75" width="50" height="40" rx="8" stroke-width="0.5"/><text class="th" x="27" y="1101.75" text-anchor="middle" dominant-baseline="central">本文</text></g>
+<g><rect class="box" x="2" y="2251.5" width="50" height="40" rx="8" stroke-width="0.5"/><text class="th" x="27" y="2271.5" text-anchor="middle" dominant-baseline="central">外部</text></g>
+<path d="M52 1101.8C56 1101.8 56 291.5 60 291.5" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g><rect class="box" x="60" y="267.5" width="228" height="48" rx="8" stroke-width="0.5"/><text class="th" x="70" y="282.5" dominant-baseline="central">五株人细胞系 (交联)</text><text class="th" x="278" y="282.5" text-anchor="end" dominant-baseline="central" style="fill:var(--text-success)">体外</text><text class="ts" x="70" y="302.5" dominant-baseline="central">[n=2 · ~8000 万 reads/样本]</text></g>
+<path d="M288 291.5C293 291.5 293 27 298 27" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-red"><rect x="298" y="14" width="168" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="27" dominant-baseline="central">细胞培养 + 支原体 PCR</text></g>
+<path d="M288 291.5C293 291.5 293 61 298 61" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-red"><rect x="298" y="48" width="168" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="61" dominant-baseline="central">树状分子合成</text></g>
+<path d="M466 61L476 61" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-red"><rect x="476" y="50" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="61" dominant-baseline="central">UV 295 nm 定量</text></g>
+<path d="M288 291.5C293 291.5 293 243 298 243" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-purple"><rect x="298" y="230" width="168" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="243" dominant-baseline="central">snoKARR-seq (PE150)</text></g>
+<path d="M466 243C471 243 471 93 476 93" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-purple"><rect x="476" y="82" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="93" dominant-baseline="central">ASO 探针设计 (Primer3)</text></g>
+<path d="M466 243C471 243 471 118 476 118" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-purple"><rect x="476" y="107" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="118" dominant-baseline="central">fastp 去接头/合并/去重</text></g>
+<path d="M466 243C471 243 471 143 476 143" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-purple"><rect x="476" y="132" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="143" dominant-baseline="central">STAR 比对 (嵌合读段)</text></g>
+<path d="M466 243C471 243 471 168 476 168" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-purple"><rect x="476" y="157" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="168" dominant-baseline="central">DG 聚类 (谱聚类)</text></g>
+<path d="M466 243C471 243 471 193 476 193" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-purple"><rect x="476" y="182" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="193" dominant-baseline="central">重现性筛选 (双重复)</text></g>
+<path d="M466 243C471 243 471 218 476 218" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-purple"><rect x="476" y="207" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="218" dominant-baseline="central">DDI 双链鉴定 (RNAplex)</text></g>
+<path d="M466 243L476 243" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-purple"><rect x="476" y="232" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="243" dominant-baseline="central">HOMER 注释 + motif</text></g>
+<path d="M466 243C471 243 471 268 476 268" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-purple"><rect x="476" y="257" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="268" dominant-baseline="central">featureCounts + DESeq2</text></g>
+<path d="M466 243C471 243 471 293 476 293" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-purple"><rect x="476" y="282" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="293" dominant-baseline="central">信噪比 (信号 vs 噪声)</text></g>
+<path d="M466 243C471 243 471 318 476 318" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-purple"><rect x="476" y="307" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="318" dominant-baseline="central">Guitar metagene</text></g>
+<path d="M466 243C471 243 471 343 476 343" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-purple"><rect x="476" y="332" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="343" dominant-baseline="central">deepTools 重复相关</text></g>
+<path d="M466 243C471 243 471 368 476 368" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-purple"><rect x="476" y="357" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="368" dominant-baseline="central">bigWig + CoolBox 作图</text></g>
+<path d="M466 243C471 243 471 393 476 393" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-purple"><rect x="476" y="382" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="393" dominant-baseline="central">VARNA 结构可视化</text></g>
+<path d="M288 291.5C293 291.5 293 435.5 298 435.5" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-purple"><rect x="298" y="422.5" width="168" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="435.5" dominant-baseline="central">KARR-seq (未富集)</text></g>
+<path d="M466 435.5C471 435.5 471 423 476 423" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-purple"><rect x="476" y="412" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="423" dominant-baseline="central">富集倍数 (富集 vs input)</text></g>
+<path d="M466 435.5C471 435.5 471 448 476 448" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-purple"><rect x="476" y="437" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="448" dominant-baseline="central">snoRNA 嵌合读段占比</text></g>
+<path d="M288 291.5C293 291.5 293 490.5 298 490.5" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-purple"><rect x="298" y="477.5" width="168" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="490.5" dominant-baseline="central">对照 (去 rRNA / 反交联)</text></g>
+<path d="M466 490.5C471 490.5 471 478 476 478" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-purple"><rect x="476" y="467" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="478" dominant-baseline="central">ZapR v2 rRNA 去除</text></g>
+<path d="M466 490.5C471 490.5 471 503 476 503" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-purple"><rect x="476" y="492" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="503" dominant-baseline="central">反交联后连接</text></g>
+<path d="M288 291.5C293 291.5 293 545.5 298 545.5" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-green"><rect x="298" y="532.5" width="168" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="545.5" dominant-baseline="central">RT-qPCR (嵌合 cDNA)</text></g>
+<path d="M466 545.5C471 545.5 471 533 476 533" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-green"><rect x="476" y="522" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="533" dominant-baseline="central">±连接对照 + spike-in</text></g>
+<path d="M466 545.5C471 545.5 471 558 476 558" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-green"><rect x="476" y="547" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="558" dominant-baseline="central">5 个 snoRNA 富集验证</text></g>
+<path d="M52 1101.8C56 1101.8 56 617 60 617" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g><rect class="box" x="60" y="593" width="228" height="48" rx="8" stroke-width="0.5"/><text class="th" x="70" y="608" dominant-baseline="central">HepG2 / HEK293T (基线)</text><text class="th" x="278" y="608" text-anchor="end" dominant-baseline="central" style="fill:var(--text-success)">体外</text><text class="ts" x="70" y="628" dominant-baseline="central">[~3000 万 reads/样本]</text></g>
+<path d="M288 617L298 617" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-blue"><rect x="298" y="604" width="168" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="617" dominant-baseline="central">小 RNA-seq (SE100) ?</text></g>
+<path d="M466 617C471 617 471 592 476 592" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-blue"><rect x="476" y="581" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="592" dominant-baseline="central">cutadapt + Clumpify 去重</text></g>
+<path d="M466 617L476 617" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-blue"><rect x="476" y="606" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="617" dominant-baseline="central">HISAT2 + StringTie 定量</text></g>
+<path d="M466 617C471 617 471 642 476 642" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-blue"><rect x="476" y="631" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="642" dominant-baseline="central">Top 50/100/190 选取</text></g>
+<path d="M52 1101.8C56 1101.8 56 701 60 701" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g><rect class="box" x="60" y="677" width="228" height="48" rx="8" stroke-width="0.5"/><text class="th" x="70" y="692" dominant-baseline="central">小鼠大脑皮层 (C57BL/6J)</text><text class="th" x="278" y="692" text-anchor="end" dominant-baseline="central" style="fill:var(--text-danger)">体内</text><text class="ts" x="70" y="712" dominant-baseline="central">[Snord115/116 富集 · 双重复]</text></g>
+<path d="M288 701L298 701" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-purple"><rect x="298" y="688" width="168" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="701" dominant-baseline="central">snoKARR-seq (脑组织)</text></g>
+<path d="M466 701C471 701 471 676 476 676" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-purple"><rect x="476" y="665" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="676" dominant-baseline="central">多拷贝 ASO 富集</text></g>
+<path d="M466 701L476 701" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-purple"><rect x="476" y="690" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="701" dominant-baseline="central">重现阈值 (双重复 ≥1)</text></g>
+<path d="M466 701C471 701 471 726 476 726" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-purple"><rect x="476" y="715" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="726" dominant-baseline="central">靶标类型统计</text></g>
+<path d="M52 1101.8C56 1101.8 56 990.5 60 990.5" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g><rect class="box" x="60" y="966.5" width="228" height="48" rx="8" stroke-width="0.5"/><text class="th" x="70" y="981.5" dominant-baseline="central">HepG2 (SNORA73 敲低)</text><text class="th" x="278" y="981.5" text-anchor="end" dominant-baseline="central" style="fill:var(--text-success)">体外</text><text class="ts" x="70" y="1001.5" dominant-baseline="central">[LNA-1/-2 · MOE · n=3]</text></g>
+<path d="M288 990.5C293 990.5 293 762 298 762" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-coral"><rect x="298" y="749" width="168" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="762" dominant-baseline="central">LNA 敲低 (RNAiMAX)</text></g>
+<path d="M466 762L476 762" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-coral"><rect x="476" y="751" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="762" dominant-baseline="central">KD 效率 (RT-qPCR)</text></g>
+<path d="M288 990.5C293 990.5 293 796 298 796" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-coral"><rect x="298" y="783" width="168" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="796" dominant-baseline="central">2′-MOE 位阻阻断</text></g>
+<path d="M288 990.5C293 990.5 293 830 298 830" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-coral"><rect x="298" y="817" width="168" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="830" dominant-baseline="central">SNORA73 过表达 / 救援</text></g>
+<path d="M466 830L476 830" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-coral"><rect x="476" y="819" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="830" dominant-baseline="central">WT / 7BM / MBM 突变体设计</text></g>
+<path d="M288 990.5C293 990.5 293 864 298 864" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-coral"><rect x="298" y="851" width="168" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="864" dominant-baseline="central">MG-132 处理 (10 µM)</text></g>
+<path d="M288 990.5C293 990.5 293 908.5 298 908.5" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-green"><rect x="298" y="895.5" width="168" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="908.5" dominant-baseline="central">RT-qPCR</text></g>
+<path d="M466 908.5C471 908.5 471 896 476 896" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-green"><rect x="476" y="885" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="896" dominant-baseline="central">ΔΔCt (oligo-dT + 随机引物)</text></g>
+<path d="M466 908.5C471 908.5 471 921 476 921" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-green"><rect x="476" y="910" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="921" dominant-baseline="central">靶 mRNA 水平对照</text></g>
+<path d="M288 990.5C293 990.5 293 963.5 298 963.5" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-green"><rect x="298" y="950.5" width="168" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="963.5" dominant-baseline="central">ELISA (培养基)</text></g>
+<path d="M466 963.5C471 963.5 471 951 476 951" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-green"><rect x="476" y="940" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="951" dominant-baseline="central">CLU/LGALS3BP/SERPINA1/ALB</text></g>
+<path d="M466 963.5C471 963.5 471 976 476 976" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-green"><rect x="476" y="965" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="976" dominant-baseline="central">配对双尾 t 检验</text></g>
+<path d="M288 990.5C293 990.5 293 1018.5 298 1018.5" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-green"><rect x="298" y="1005.5" width="168" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="1018.5" dominant-baseline="central">Western blot</text></g>
+<path d="M466 1018.5C471 1018.5 471 1006 476 1006" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-green"><rect x="476" y="995" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="1006" dominant-baseline="central">培养基丙酮沉淀</text></g>
+<path d="M466 1018.5C471 1018.5 471 1031 476 1031" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-green"><rect x="476" y="1020" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="1031" dominant-baseline="central">APOH 归一化</text></g>
+<path d="M288 990.5C293 990.5 293 1086 298 1086" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-amber"><rect x="298" y="1073" width="168" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="1086" dominant-baseline="central">亚细胞分离</text></g>
+<path d="M466 1086C471 1086 471 1061 476 1061" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-amber"><rect x="476" y="1050" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="1061" dominant-baseline="central">核糖体超速离心</text></g>
+<path d="M466 1086L476 1086" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-amber"><rect x="476" y="1075" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="1086" dominant-baseline="central">微粒体差速离心</text></g>
+<path d="M466 1086C471 1086 471 1111 476 1111" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-amber"><rect x="476" y="1100" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="1111" dominant-baseline="central">胞质/核 RNA 试剂盒</text></g>
+<path d="M288 990.5C293 990.5 293 1153.5 298 1153.5" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-amber"><rect x="298" y="1140.5" width="168" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="1153.5" dominant-baseline="central">多聚核糖体分析</text></g>
+<path d="M466 1153.5C471 1153.5 471 1141 476 1141" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-amber"><rect x="476" y="1130" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="1141" dominant-baseline="central">10–50% 蔗糖梯度</text></g>
+<path d="M466 1153.5C471 1153.5 471 1166 476 1166" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-amber"><rect x="476" y="1155" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="1166" dominant-baseline="central">分级 RT-qPCR + WB</text></g>
+<path d="M288 990.5C293 990.5 293 1208.5 298 1208.5" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-amber"><rect x="298" y="1195.5" width="168" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="1208.5" dominant-baseline="central">SRP RIP-qPCR</text></g>
+<path d="M466 1208.5C471 1208.5 471 1196 476 1196" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-amber"><rect x="476" y="1185" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="1196" dominant-baseline="central">SRP14/72 vs IgG</text></g>
+<path d="M466 1208.5C471 1208.5 471 1221 476 1221" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-amber"><rect x="476" y="1210" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="1221" dominant-baseline="central">ΔΔCt 归一 input + IgG</text></g>
+<path d="M52 1101.8C56 1101.8 56 1297 60 1297" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g><rect class="box" x="60" y="1273" width="228" height="48" rx="8" stroke-width="0.5"/><text class="th" x="70" y="1288" dominant-baseline="central">HepG2 (U3 / U8 敲低)</text><text class="th" x="278" y="1288" text-anchor="end" dominant-baseline="central" style="fill:var(--text-success)">体外</text><text class="ts" x="70" y="1308" dominant-baseline="central">[ASO · n=3]</text></g>
+<path d="M288 1297C293 1297 293 1257 298 1257" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-coral"><rect x="298" y="1244" width="168" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="1257" dominant-baseline="central">ASO 敲低</text></g>
+<path d="M466 1257L476 1257" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-coral"><rect x="476" y="1246" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="1257" dominant-baseline="central">KD 效率 (RT-qPCR)</text></g>
+<path d="M288 1297C293 1297 293 1314 298 1314" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-red"><rect x="298" y="1301" width="168" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="1314" dominant-baseline="central">LC-MS/MS 定量 Nm</text></g>
+<path d="M466 1314C471 1314 471 1289 476 1289" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-red"><rect x="476" y="1278" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="1289" dominant-baseline="central">mRNA 纯化 + RiboMinus</text></g>
+<path d="M466 1314L476 1314" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-red"><rect x="476" y="1303" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="1314" dominant-baseline="central">核酸酶 P1 + FastAP 消化</text></g>
+<path d="M466 1314C471 1314 471 1339 476 1339" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-red"><rect x="476" y="1328" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="1339" dominant-baseline="central">标准曲线定量 (Nm / m6A)</text></g>
+<path d="M52 1101.8C56 1101.8 56 1402.5 60 1402.5" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g><rect class="box" x="60" y="1378.5" width="228" height="48" rx="8" stroke-width="0.5"/><text class="th" x="70" y="1393.5" dominant-baseline="central">HepG2 (H/ACA 蛋白敲低)</text><text class="th" x="278" y="1393.5" text-anchor="end" dominant-baseline="central" style="fill:var(--text-success)">体外</text><text class="ts" x="70" y="1413.5" dominant-baseline="central">[DKC1/NHP2/NOP10/GAR1]</text></g>
+<path d="M288 1402.5C293 1402.5 293 1375 298 1375" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-coral"><rect x="298" y="1362" width="168" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="1375" dominant-baseline="central">siRNA 敲低 (两轮)</text></g>
+<path d="M466 1375L476 1375" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-coral"><rect x="476" y="1364" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="1375" dominant-baseline="central">KD 效率</text></g>
+<path d="M288 1402.5C293 1402.5 293 1419.5 298 1419.5" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-green"><rect x="298" y="1406.5" width="168" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="1419.5" dominant-baseline="central">WB + RT-qPCR 读出</text></g>
+<path d="M466 1419.5C471 1419.5 471 1407 476 1407" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-green"><rect x="476" y="1396" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="1407" dominant-baseline="central">SNORA73 丰度 + 定位</text></g>
+<path d="M466 1419.5C471 1419.5 471 1432 476 1432" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-green"><rect x="476" y="1421" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="1432" dominant-baseline="central">分泌蛋白 (APOH 归一)</text></g>
+<path d="M52 1101.8C56 1101.8 56 1535.5 60 1535.5" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g><rect class="box" x="60" y="1511.5" width="228" height="48" rx="8" stroke-width="0.5"/><text class="th" x="70" y="1526.5" dominant-baseline="central">HEK293T/HepG2 (报告)</text><text class="th" x="278" y="1526.5" text-anchor="end" dominant-baseline="central" style="fill:var(--text-success)">体外</text><text class="ts" x="70" y="1546.5" dominant-baseline="central">[CLU-mCherry · seGFP · n=3–4]</text></g>
+<path d="M288 1535.5C293 1535.5 293 1468 298 1468" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-coral"><rect x="298" y="1455" width="168" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="1468" dominant-baseline="central">质粒转染 (Lipofectamine)</text></g>
+<path d="M466 1468L476 1468" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-coral"><rect x="476" y="1457" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="1468" dominant-baseline="central">hU6-snoRNA : 报告 = 3:1</text></g>
+<path d="M288 1535.5C293 1535.5 293 1512.5 298 1512.5" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-green"><rect x="298" y="1499.5" width="168" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="1512.5" dominant-baseline="central">荧光报告实验</text></g>
+<path d="M466 1512.5C471 1512.5 471 1500 476 1500" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-green"><rect x="476" y="1489" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="1500" dominant-baseline="central">mCherry/eGFP 读板</text></g>
+<path d="M466 1512.5C471 1512.5 471 1525 476 1525" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-green"><rect x="476" y="1514" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="1525" dominant-baseline="central">转染对照归一化</text></g>
+<path d="M288 1535.5C293 1535.5 293 1580 298 1580" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-amber"><rect x="298" y="1567" width="168" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="1580" dominant-baseline="central">SRP RIP + 双重 pull-down</text></g>
+<path d="M466 1580C471 1580 471 1555 476 1555" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-amber"><rect x="476" y="1544" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="1555" dominant-baseline="central">SRP14 IP → CLU ASO</text></g>
+<path d="M466 1580L476 1580" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-amber"><rect x="476" y="1569" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="1580" dominant-baseline="central">SNORA73 富集 (qPCR)</text></g>
+<path d="M466 1580C471 1580 471 1605 476 1605" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-amber"><rect x="476" y="1594" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="1605" dominant-baseline="central">按 7SL 归一化 IP</text></g>
+<path d="M52 1101.8C56 1101.8 56 1696 60 1696" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g><rect class="box" x="60" y="1672" width="228" height="48" rx="8" stroke-width="0.5"/><text class="th" x="70" y="1687" dominant-baseline="central">合成 RNA (体外)</text><text class="th" x="278" y="1687" text-anchor="end" dominant-baseline="central" style="fill:var(--text-success)">体外</text><text class="ts" x="70" y="1707" dominant-baseline="central">[FAM-RNA 300 fmol · 比例 1:2/1:4]</text></g>
+<path d="M288 1696C293 1696 293 1651.5 298 1651.5" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-red"><rect x="298" y="1638.5" width="168" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="1651.5" dominant-baseline="central">T7 体外转录</text></g>
+<path d="M466 1651.5C471 1651.5 471 1639 476 1639" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-red"><rect x="476" y="1628" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="1639" dominant-baseline="central">SNORA15A 对照</text></g>
+<path d="M466 1651.5C471 1651.5 471 1664 476 1664" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-red"><rect x="476" y="1653" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="1664" dominant-baseline="central">变性胶验证</text></g>
+<path d="M288 1696C293 1696 293 1706.5 298 1706.5" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-red"><rect x="298" y="1693.5" width="168" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="1706.5" dominant-baseline="central">原生 TBE 胶</text></g>
+<path d="M466 1706.5C471 1706.5 471 1694 476 1694" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-red"><rect x="476" y="1683" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="1694" dominant-baseline="central">FAM 荧光成像</text></g>
+<path d="M466 1706.5C471 1706.5 471 1719 476 1719" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-red"><rect x="476" y="1708" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="1719" dominant-baseline="central">二聚体 / 三聚体上移</text></g>
+<path d="M288 1696C293 1696 293 1751 298 1751" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-red"><rect x="298" y="1738" width="168" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="1751" dominant-baseline="central">kethoxal 标记 (8/10 bp)</text></g>
+<path d="M466 1751L476 1751" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-red"><rect x="476" y="1740" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="1751" dominant-baseline="central">双链保留检测</text></g>
+<path d="M52 1101.8C56 1101.8 56 1806 60 1806" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g><rect class="box" x="60" y="1782" width="228" height="48" rx="8" stroke-width="0.5"/><text class="th" x="70" y="1797" dominant-baseline="central">HepG2 (SNORA44 敲低)</text><text class="th" x="278" y="1797" text-anchor="end" dominant-baseline="central" style="fill:var(--text-success)">体外</text><text class="ts" x="70" y="1817" dominant-baseline="central">[LNA · n=2–3]</text></g>
+<path d="M288 1806C293 1806 293 1789 298 1789" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-coral"><rect x="298" y="1776" width="168" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="1789" dominant-baseline="central">LNA 敲低</text></g>
+<path d="M466 1789L476 1789" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-coral"><rect x="476" y="1778" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="1789" dominant-baseline="central">FGFR4 mRNA 水平</text></g>
+<path d="M288 1806C293 1806 293 1823 298 1823" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-green"><rect x="298" y="1810" width="168" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="1823" dominant-baseline="central">分泌检测 (ELISA/WB ?)</text></g>
+<path d="M466 1823L476 1823" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-green"><rect x="476" y="1812" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="1823" dominant-baseline="central">FGFR4 分泌量</text></g>
+<path d="M52 1101.8C56 1101.8 56 1912 60 1912" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g><rect class="box" x="60" y="1888" width="228" height="48" rx="8" stroke-width="0.5"/><text class="th" x="70" y="1903" dominant-baseline="central">原始与处理数据存档</text><text class="th" x="278" y="1903" text-anchor="end" dominant-baseline="central" style="fill:var(--text-secondary)">存档</text><text class="ts" x="70" y="1923" dominant-baseline="central">[GEO · Zenodo · GitHub]</text></g>
+<path d="M288 1912C293 1912 293 1861 298 1861" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-gray"><rect x="298" y="1848" width="380" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="1861" dominant-baseline="central">GEO GSE261702：KARR-seq + 小 RNA-seq</text></g>
+<path d="M288 1912C293 1912 293 1895 298 1895" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-gray"><rect x="298" y="1882" width="380" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="1895" dominant-baseline="central">Zenodo 10.5281/zenodo.13930523：脚本</text></g>
+<path d="M288 1912C293 1912 293 1929 298 1929" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-gray"><rect x="298" y="1916" width="380" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="1929" dominant-baseline="central">GitHub Bei-1205/snoKARR-seq：脚本</text></g>
+<path d="M288 1912C293 1912 293 1963 298 1963" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-gray"><rect x="298" y="1950" width="380" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="1963" dominant-baseline="central">Table S1：处理后互作表 · Table S2：ASO/引物</text></g>
+<path d="M52 2271.5C56 2271.5 56 2078.5 60 2078.5" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g><rect class="box" x="60" y="2054.5" width="228" height="48" rx="8" stroke-width="0.5"/><text class="th" x="70" y="2069.5" dominant-baseline="central">RIC-seq / PARIS / PARIS2</text><text class="th" x="278" y="2069.5" text-anchor="end" dominant-baseline="central" style="fill:var(--text-success)">体外</text><text class="ts" x="70" y="2089.5" dominant-baseline="central">[已发表 · 多细胞系]</text></g>
+<path d="M288 2078.5C293 2078.5 293 2023.5 298 2023.5" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-pink"><rect x="298" y="2010.5" width="168" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="2023.5" dominant-baseline="central">RIC-seq (Cai 2020)</text></g>
+<path d="M466 2023.5C471 2023.5 471 2011 476 2011" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-pink"><rect x="476" y="2000" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="2011" dominant-baseline="central">同流程重处理 (STAR+DG)</text></g>
+<path d="M466 2023.5C471 2023.5 471 2036 476 2036" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-pink"><rect x="476" y="2025" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="2036" dominant-baseline="central">信噪比比较</text></g>
+<path d="M288 2078.5L298 2078.5" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-pink"><rect x="298" y="2065.5" width="168" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="2078.5" dominant-baseline="central">PARIS (Lu 2016)</text></g>
+<path d="M466 2078.5C471 2078.5 471 2066 476 2066" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-pink"><rect x="476" y="2055" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="2066" dominant-baseline="central">同流程重处理 (STAR+DG)</text></g>
+<path d="M466 2078.5C471 2078.5 471 2091 476 2091" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-pink"><rect x="476" y="2080" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="2091" dominant-baseline="central">信噪比比较</text></g>
+<path d="M288 2078.5C293 2078.5 293 2133.5 298 2133.5" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-pink"><rect x="298" y="2120.5" width="168" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="2133.5" dominant-baseline="central">PARIS2 (Zhang 2023)</text></g>
+<path d="M466 2133.5C471 2133.5 471 2121 476 2121" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-pink"><rect x="476" y="2110" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="2121" dominant-baseline="central">同流程重处理</text></g>
+<path d="M466 2133.5C471 2133.5 471 2146 476 2146" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-pink"><rect x="476" y="2135" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="2146" dominant-baseline="central">snoRNA 嵌合占比 (Fig 1F)</text></g>
+<path d="M52 2271.5C56 2271.5 56 2193 60 2193" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g><rect class="box" x="60" y="2169" width="228" height="48" rx="8" stroke-width="0.5"/><text class="th" x="70" y="2184" dominant-baseline="central">PC3 / MDA-MB-231 / A549</text><text class="th" x="278" y="2184" text-anchor="end" dominant-baseline="central" style="fill:var(--text-success)">体外</text><text class="ts" x="70" y="2204" dominant-baseline="central">[小 RNA-seq · Zhang 2021/2019 ?]</text></g>
+<path d="M288 2193L298 2193" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-blue"><rect x="298" y="2180" width="168" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="2193" dominant-baseline="central">小 RNA-seq</text></g>
+<path d="M466 2193L476 2193" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-blue"><rect x="476" y="2182" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="2193" dominant-baseline="central">snoRNA 丰度排序 (Top 50)</text></g>
+<path d="M52 2271.5C56 2271.5 56 2269.5 60 2269.5" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g><rect class="box" x="60" y="2245.5" width="228" height="48" rx="8" stroke-width="0.5"/><text class="th" x="70" y="2260.5" dominant-baseline="central">HepG2 mRNA 修饰位点</text><text class="th" x="278" y="2260.5" text-anchor="end" dominant-baseline="central" style="fill:var(--text-success)">体外</text><text class="ts" x="70" y="2280.5" dominant-baseline="central">[Nm (siControl / siFBL) · J]</text></g>
+<path d="M288 2269.5C293 2269.5 293 2252.5 298 2252.5" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-teal"><rect x="298" y="2239.5" width="168" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="2252.5" dominant-baseline="central">Nm-Mut-seq (Chen 2023)</text></g>
+<path d="M466 2252.5C471 2252.5 471 2240 476 2240" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-teal"><rect x="476" y="2229" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="2240" dominant-baseline="central">FBL 依赖位点重叠</text></g>
+<path d="M466 2252.5C471 2252.5 471 2265 476 2265" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-teal"><rect x="476" y="2254" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="2265" dominant-baseline="central">与靶位点距离 (box)</text></g>
+<path d="M288 2269.5C293 2269.5 293 2297 298 2297" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-teal"><rect x="298" y="2284" width="168" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="2297" dominant-baseline="central">Pseudo-seq (Martinez)</text></g>
+<path d="M466 2297L476 2297" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-teal"><rect x="476" y="2286" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="2297" dominant-baseline="central">与 H/ACA 靶标重叠检验</text></g>
+<path d="M52 2271.5C56 2271.5 56 2464.5 60 2464.5" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g><rect class="box" x="60" y="2440.5" width="228" height="48" rx="8" stroke-width="0.5"/><text class="th" x="70" y="2455.5" dominant-baseline="central">基因 / 结构注释资源</text><text class="th" x="278" y="2455.5" text-anchor="end" dominant-baseline="central" style="fill:var(--text-secondary)">注释</text><text class="ts" x="70" y="2475.5" dominant-baseline="central">[snoDB · Rfam · GO · PDB …]</text></g>
+<path d="M288 2464.5C293 2464.5 293 2335 298 2335" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-gray"><rect x="298" y="2322" width="168" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="2335" dominant-baseline="central">snoDB/LBME/snOPY/Atlas</text></g>
+<path d="M466 2335L476 2335" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-gray"><rect x="476" y="2324" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="2335" dominant-baseline="central">已知互作 + box 序列</text></g>
+<path d="M288 2464.5C293 2464.5 293 2369 298 2369" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-gray"><rect x="298" y="2356" width="168" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="2369" dominant-baseline="central">Rfam + UCSC liftOver</text></g>
+<path d="M466 2369L476 2369" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-gray"><rect x="476" y="2358" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="2369" dominant-baseline="central">保守性 (人/猩猩/小鼠)</text></g>
+<path d="M288 2464.5C293 2464.5 293 2403 298 2403" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-gray"><rect x="298" y="2390" width="168" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="2403" dominant-baseline="central">GenBank KY962518.1 + hg38</text></g>
+<path d="M466 2403L476 2403" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-gray"><rect x="476" y="2392" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="2403" dominant-baseline="central">自定义 rDNA 参考基因组</text></g>
+<path d="M288 2464.5C293 2464.5 293 2437 298 2437" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-gray"><rect x="298" y="2424" width="168" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="2437" dominant-baseline="central">PDB 4UG0 (80S 冷冻电镜)</text></g>
+<path d="M466 2437L476 2437" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-gray"><rect x="476" y="2426" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="2437" dominant-baseline="central">PIR 近邻去除 (AF3 半径)</text></g>
+<path d="M288 2464.5C293 2464.5 293 2481.5 298 2481.5" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-gray"><rect x="298" y="2468.5" width="168" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="2481.5" dominant-baseline="central">GO 术语 (GSEApy)</text></g>
+<path d="M466 2481.5C471 2481.5 471 2469 476 2469" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-gray"><rect x="476" y="2458" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="2469" dominant-baseline="central">U3 靶标 GO</text></g>
+<path d="M466 2481.5C471 2481.5 471 2494 476 2494" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-gray"><rect x="476" y="2483" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="2494" dominant-baseline="central">SNORA73 靶标 GO</text></g>
+<path d="M288 2464.5C293 2464.5 293 2526 298 2526" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-gray"><rect x="298" y="2513" width="168" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="2526" dominant-baseline="central">SPRomeDB / HPA / GO 胞外</text></g>
+<path d="M466 2526L476 2526" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-gray"><rect x="476" y="2515" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="2526" dominant-baseline="central">分泌蛋白靶标占比</text></g>
+<path d="M288 2464.5C293 2464.5 293 2560 298 2560" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-gray"><rect x="298" y="2547" width="168" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="2560" dominant-baseline="central">Membranome / GO 膜</text></g>
+<path d="M466 2560L476 2560" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-gray"><rect x="476" y="2549" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="2560" dominant-baseline="central">膜蛋白靶标占比</text></g>
+<path d="M288 2464.5C293 2464.5 293 2594 298 2594" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-gray"><rect x="298" y="2581" width="168" height="26" rx="6" stroke-width="1"/><text class="ts" x="308" y="2594" dominant-baseline="central">R2DT 二级结构</text></g>
+<path d="M466 2594L476 2594" fill="none" stroke="#888780" stroke-width="0.5"/>
+<g class="c-gray"><rect x="476" y="2583" width="202" height="22" rx="5" stroke-width="0.5"/><text class="ts" x="484" y="2594" dominant-baseline="central">SNORA73 J 口袋 / MBM / 7BM</text></g>
+<text class="th" x="12" y="2637" dominant-baseline="central" style="fill:var(--text-success)">体外</text><text class="th" x="52" y="2637" dominant-baseline="central" style="fill:var(--text-danger)">体内</text><text class="ts" x="96" y="2637" dominant-baseline="central">字色 = 样本类型；框色 = 方法类别（灰 = 存档、注释）</text>
+<text class="ts" x="12" y="2659" dominant-baseline="central">紫 邻近连接测序 · 蓝 小 RNA-seq · 粉 外部交联测序 · 青 外部修饰图谱</text>
+<text class="ts" x="12" y="2681" dominant-baseline="central">珊瑚 扰动 · 绿 读出 · 琥珀 分离 / IP · 红 化学 / 体外</text>
+</svg>

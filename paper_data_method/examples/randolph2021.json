@@ -1,0 +1,72 @@
+{
+  "title": "Randolph 2021 数据、实验方法与分析方法",
+  "samples": [
+    {
+      "l1": "本文", "name": "PBMC (mock/IAV, 6 hpi)", "detail": "[90 男性 · 180 样本 · 235,161 细胞]", "tag": "体外",
+      "methods": [
+        {"text": "病毒株制备 (Cal/04/09)", "color": "red"},
+        {"text": "IAV 感染 (MOI 0.5, 6 hpi)", "color": "coral"},
+        {"text": "scRNA-seq", "analyses": [
+          "细胞聚类 + UMAP (8 类)", "pseudobulk 汇总 + PCA", "limma 差异表达 (IAV vs mock)",
+          "应答相关性 (Pearson)", "特异性评分 (specificity)", "IAV 转录本定量 (CPM)",
+          "popDE 回归 (表达 ~ 祖源)", "mash 多变量收缩 (lfsr)", "popDR (应答幅度 ~ 祖源)",
+          "IFN score ~ 祖源 (Fisher)", "IFN score ~ IAV 转录本", "cis-eQTL 作图 (±100 kb)",
+          "eGene 富集 popDE (logistic)", "cis 预测 vs 观察祖源效应", "多基因选择检验 (置换)",
+          "回归掉 top cis-eQTL", "RP eGene ~ IAV 转录本"]},
+        {"text": "bulk RNA-seq (同样本)", "method": "bulk RNA-seq", "analyses": ["eGene 效应量验证 (adj R² 0.71)"]},
+        {"text": "TM3seq 文库制备 (Tn5) ?", "color": "blue"}
+      ]
+    },
+    {
+      "l1": "本文", "name": "高/低 IFN 应答者 (IAV)", "detail": "[20 人 (高/低各 10) · 8 个时点]", "tag": "体外",
+      "methods": [
+        {"text": "IAV 感染 (重新感染)", "color": "coral", "analyses": ["按 IFN score 选高/低各 10 人"]},
+        {"text": "Luminex：IFN-α2 / IFN-β", "analyses": ["高 vs 低应答者 (Mann-Whitney)", "IFN-α2/β 倍数差 (12 hpi 起)"]},
+        {"text": "噬斑实验 (24/48 hpi)", "analyses": ["高 vs 低应答者滴度 (M-W U)"]}
+      ]
+    },
+    {
+      "l1": "本文", "name": "供体血清 (基线)", "detail": "[人数见 table S1]", "tag": "体内",
+      "methods": [
+        {"text": "IgG 滴度检测 (Cal/04/09)", "analyses": ["IgG ~ 祖源 (无关)", "IgG ~ IAV 应答 (无关)", "IgG ~ HLA 基因型 (无关)"]}
+      ]
+    },
+    {
+      "l1": "本文", "name": "供体基因组 DNA (基线)", "detail": "[89 人成功基因分型]", "tag": "体内",
+      "methods": [
+        {"text": "WGS 全基因组测序", "analyses": ["祖源成分比例估计 (欧/非)", "基因型 (供 eQTL 作图)"]},
+        {"text": "HLA 基因型；LoF 筛查 ?", "method": "WGS 全基因组测序", "analyses": ["HLA 分型 (供 IgG 关联)", "IFN 缺陷基因 LoF 筛查 (20 人)"]}
+      ]
+    },
+    {
+      "l1": "本文", "name": "原始与处理数据存档", "detail": "[公共数据库 · 3 处]", "tag": "存档",
+      "methods": [
+        {"text": "GEO GSE162632：FASTQ、RNA-seq 计数", "wide": true, "method": "archive-GEO"},
+        {"text": "SRA PRJNA736483：全基因组测序数据", "wide": true, "method": "archive-SRA"},
+        {"text": "Zenodo 10.5281/zenodo.4273999：处理数据、脚本", "wide": true, "method": "archive-Zenodo"}
+      ]
+    },
+    {
+      "l1": "外部", "name": "单核细胞 (mock/IAV)", "detail": "[欧/非洲裔供体；n 见 Quach 2016]", "tag": "体外",
+      "methods": [
+        {"text": "IAV 感染 ?", "color": "coral", "method": "IAV 感染 (MOI 0.5, 6 hpi)"},
+        {"text": "bulk RNA-seq", "analyses": ["popDE 一致性 (r 0.50–0.66)"]}
+      ]
+    },
+    {
+      "l1": "外部", "name": "COVID 患者 PBMC (WOS)", "detail": "[129 人 · 505,616 细胞]", "tag": "体内",
+      "methods": [
+        {"text": "scRNA-seq", "analyses": ["重症关联基因 (校正协变量)", "重症基因 × popDE (Fisher+置换)", "富集曲线 (按 popDE 效应量)", "祖源方向偏向 (卡方检验)", "S100 基因 ~ 祖源 / WOS (回归)"]},
+        {"text": "WOS 临床分级", "color": "gray"}
+      ]
+    },
+    {
+      "l1": "外部", "name": "基因集与注释资源", "detail": "[3 类]", "tag": "注释",
+      "methods": [
+        {"text": "MSigDB Hallmark 基因集", "analyses": ["GSEA (Hallmark 富集)", "IFN score (IFN-α/γ 基因集)"]},
+        {"text": "GO 术语 / ClueGO", "analyses": ["ClueGO 超几何检验 (FDR<0.01)", "GO 项方向性置换检验"]},
+        {"text": "IFN 缺陷基因 (Zhang 2020)"}
+      ]
+    }
+  ]
+}

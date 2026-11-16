@@ -1,0 +1,512 @@
+{
+ "title": "Liu 2025 Cell 数据、实验方法与分析方法",
+ "legend": "字色 = 样本类型；框色 = 方法类别（灰 = 存档、注释）",
+ "legend_note": [
+  "紫 邻近连接测序 · 蓝 小 RNA-seq · 粉 外部交联测序 · 青 外部修饰图谱",
+  "珊瑚 扰动 · 绿 读出 · 琥珀 分离 / IP · 红 化学 / 体外"
+ ],
+ "samples": [
+  {
+   "l1": "本文",
+   "name": "五株人细胞系 (交联)",
+   "detail": "[n=2 · ~8000 万 reads/样本]",
+   "tag": "体外",
+   "methods": [
+    {
+     "text": "细胞培养 + 支原体 PCR",
+     "color": "red",
+     "method": "chem"
+    },
+    {
+     "text": "树状分子合成",
+     "color": "red",
+     "method": "chem",
+     "analyses": [
+      "UV 295 nm 定量"
+     ]
+    },
+    {
+     "text": "snoKARR-seq (PE150)",
+     "color": "purple",
+     "analyses": [
+      "ASO 探针设计 (Primer3)",
+      "fastp 去接头/合并/去重",
+      "STAR 比对 (嵌合读段)",
+      "DG 聚类 (谱聚类)",
+      "重现性筛选 (双重复)",
+      "DDI 双链鉴定 (RNAplex)",
+      "HOMER 注释 + motif",
+      "featureCounts + DESeq2",
+      "信噪比 (信号 vs 噪声)",
+      "Guitar metagene",
+      "deepTools 重复相关",
+      "bigWig + CoolBox 作图",
+      "VARNA 结构可视化"
+     ]
+    },
+    {
+     "text": "KARR-seq (未富集)",
+     "color": "purple",
+     "method": "snoKARR-seq (PE150)",
+     "analyses": [
+      "富集倍数 (富集 vs input)",
+      "snoRNA 嵌合读段占比"
+     ]
+    },
+    {
+     "text": "对照 (去 rRNA / 反交联)",
+     "color": "purple",
+     "method": "snoKARR-seq (PE150)",
+     "analyses": [
+      "ZapR v2 rRNA 去除",
+      "反交联后连接"
+     ]
+    },
+    {
+     "text": "RT-qPCR (嵌合 cDNA)",
+     "color": "green",
+     "analyses": [
+      "±连接对照 + spike-in",
+      "5 个 snoRNA 富集验证"
+     ]
+    }
+   ]
+  },
+  {
+   "l1": "本文",
+   "name": "HepG2 / HEK293T (基线)",
+   "detail": "[~3000 万 reads/样本]",
+   "tag": "体外",
+   "methods": [
+    {
+     "text": "小 RNA-seq (SE100) ?",
+     "color": "blue",
+     "analyses": [
+      "cutadapt + Clumpify 去重",
+      "HISAT2 + StringTie 定量",
+      "Top 50/100/190 选取"
+     ]
+    }
+   ]
+  },
+  {
+   "l1": "本文",
+   "name": "小鼠大脑皮层 (C57BL/6J)",
+   "detail": "[Snord115/116 富集 · 双重复]",
+   "tag": "体内",
+   "methods": [
+    {
+     "text": "snoKARR-seq (脑组织)",
+     "color": "purple",
+     "method": "snoKARR-seq (PE150)",
+     "analyses": [
+      "多拷贝 ASO 富集",
+      "重现阈值 (双重复 ≥1)",
+      "靶标类型统计"
+     ]
+    }
+   ]
+  },
+  {
+   "l1": "本文",
+   "name": "HepG2 (SNORA73 敲低)",
+   "detail": "[LNA-1/-2 · MOE · n=3]",
+   "tag": "体外",
+   "methods": [
+    {
+     "text": "LNA 敲低 (RNAiMAX)",
+     "color": "coral",
+     "method": "perturb",
+     "analyses": [
+      "KD 效率 (RT-qPCR)"
+     ]
+    },
+    {
+     "text": "2′-MOE 位阻阻断",
+     "color": "coral",
+     "method": "perturb"
+    },
+    {
+     "text": "SNORA73 过表达 / 救援",
+     "color": "coral",
+     "method": "perturb",
+     "analyses": [
+      "WT / 7BM / MBM 突变体设计"
+     ]
+    },
+    {
+     "text": "MG-132 处理 (10 µM)",
+     "color": "coral",
+     "method": "perturb"
+    },
+    {
+     "text": "RT-qPCR",
+     "color": "green",
+     "analyses": [
+      "ΔΔCt (oligo-dT + 随机引物)",
+      "靶 mRNA 水平对照"
+     ]
+    },
+    {
+     "text": "ELISA (培养基)",
+     "color": "green",
+     "analyses": [
+      "CLU/LGALS3BP/SERPINA1/ALB",
+      "配对双尾 t 检验"
+     ]
+    },
+    {
+     "text": "Western blot",
+     "color": "green",
+     "analyses": [
+      "培养基丙酮沉淀",
+      "APOH 归一化"
+     ]
+    },
+    {
+     "text": "亚细胞分离",
+     "color": "amber",
+     "analyses": [
+      "核糖体超速离心",
+      "微粒体差速离心",
+      "胞质/核 RNA 试剂盒"
+     ]
+    },
+    {
+     "text": "多聚核糖体分析",
+     "color": "amber",
+     "analyses": [
+      "10–50% 蔗糖梯度",
+      "分级 RT-qPCR + WB"
+     ]
+    },
+    {
+     "text": "SRP RIP-qPCR",
+     "color": "amber",
+     "analyses": [
+      "SRP14/72 vs IgG",
+      "ΔΔCt 归一 input + IgG"
+     ]
+    }
+   ]
+  },
+  {
+   "l1": "本文",
+   "name": "HepG2 (U3 / U8 敲低)",
+   "detail": "[ASO · n=3]",
+   "tag": "体外",
+   "methods": [
+    {
+     "text": "ASO 敲低",
+     "color": "coral",
+     "method": "perturb",
+     "analyses": [
+      "KD 效率 (RT-qPCR)"
+     ]
+    },
+    {
+     "text": "LC-MS/MS 定量 Nm",
+     "color": "red",
+     "method": "chem",
+     "analyses": [
+      "mRNA 纯化 + RiboMinus",
+      "核酸酶 P1 + FastAP 消化",
+      "标准曲线定量 (Nm / m6A)"
+     ]
+    }
+   ]
+  },
+  {
+   "l1": "本文",
+   "name": "HepG2 (H/ACA 蛋白敲低)",
+   "detail": "[DKC1/NHP2/NOP10/GAR1]",
+   "tag": "体外",
+   "methods": [
+    {
+     "text": "siRNA 敲低 (两轮)",
+     "color": "coral",
+     "method": "perturb",
+     "analyses": [
+      "KD 效率"
+     ]
+    },
+    {
+     "text": "WB + RT-qPCR 读出",
+     "color": "green",
+     "method": "RT-qPCR",
+     "analyses": [
+      "SNORA73 丰度 + 定位",
+      "分泌蛋白 (APOH 归一)"
+     ]
+    }
+   ]
+  },
+  {
+   "l1": "本文",
+   "name": "HEK293T/HepG2 (报告)",
+   "detail": "[CLU-mCherry · seGFP · n=3–4]",
+   "tag": "体外",
+   "methods": [
+    {
+     "text": "质粒转染 (Lipofectamine)",
+     "color": "coral",
+     "method": "perturb",
+     "analyses": [
+      "hU6-snoRNA : 报告 = 3:1"
+     ]
+    },
+    {
+     "text": "荧光报告实验",
+     "color": "green",
+     "analyses": [
+      "mCherry/eGFP 读板",
+      "转染对照归一化"
+     ]
+    },
+    {
+     "text": "SRP RIP + 双重 pull-down",
+     "color": "amber",
+     "analyses": [
+      "SRP14 IP → CLU ASO",
+      "SNORA73 富集 (qPCR)",
+      "按 7SL 归一化 IP"
+     ]
+    }
+   ]
+  },
+  {
+   "l1": "本文",
+   "name": "合成 RNA (体外)",
+   "detail": "[FAM-RNA 300 fmol · 比例 1:2/1:4]",
+   "tag": "体外",
+   "methods": [
+    {
+     "text": "T7 体外转录",
+     "color": "red",
+     "method": "chem",
+     "analyses": [
+      "SNORA15A 对照",
+      "变性胶验证"
+     ]
+    },
+    {
+     "text": "原生 TBE 胶",
+     "color": "red",
+     "method": "chem",
+     "analyses": [
+      "FAM 荧光成像",
+      "二聚体 / 三聚体上移"
+     ]
+    },
+    {
+     "text": "kethoxal 标记 (8/10 bp)",
+     "color": "red",
+     "method": "chem",
+     "analyses": [
+      "双链保留检测"
+     ]
+    }
+   ]
+  },
+  {
+   "l1": "本文",
+   "name": "HepG2 (SNORA44 敲低)",
+   "detail": "[LNA · n=2–3]",
+   "tag": "体外",
+   "methods": [
+    {
+     "text": "LNA 敲低",
+     "color": "coral",
+     "method": "perturb",
+     "analyses": [
+      "FGFR4 mRNA 水平"
+     ]
+    },
+    {
+     "text": "分泌检测 (ELISA/WB ?)",
+     "color": "green",
+     "analyses": [
+      "FGFR4 分泌量"
+     ]
+    }
+   ]
+  },
+  {
+   "l1": "本文",
+   "name": "原始与处理数据存档",
+   "detail": "[GEO · Zenodo · GitHub]",
+   "tag": "存档",
+   "methods": [
+    {
+     "text": "GEO GSE261702：KARR-seq + 小 RNA-seq",
+     "wide": true,
+     "method": "archive-GEO"
+    },
+    {
+     "text": "Zenodo 10.5281/zenodo.13930523：脚本",
+     "wide": true,
+     "method": "archive-Zenodo"
+    },
+    {
+     "text": "GitHub Bei-1205/snoKARR-seq：脚本",
+     "wide": true,
+     "method": "archive-GitHub"
+    },
+    {
+     "text": "Table S1：处理后互作表 · Table S2：ASO/引物",
+     "wide": true,
+     "method": "archive-Table"
+    }
+   ]
+  },
+  {
+   "l1": "外部",
+   "name": "RIC-seq / PARIS / PARIS2",
+   "detail": "[已发表 · 多细胞系]",
+   "tag": "体外",
+   "methods": [
+    {
+     "text": "RIC-seq (Cai 2020)",
+     "color": "pink",
+     "method": "ext-crosslink",
+     "analyses": [
+      "同流程重处理 (STAR+DG)",
+      "信噪比比较"
+     ]
+    },
+    {
+     "text": "PARIS (Lu 2016)",
+     "color": "pink",
+     "method": "ext-crosslink",
+     "analyses": [
+      "同流程重处理 (STAR+DG)",
+      "信噪比比较"
+     ]
+    },
+    {
+     "text": "PARIS2 (Zhang 2023)",
+     "color": "pink",
+     "method": "ext-crosslink",
+     "analyses": [
+      "同流程重处理",
+      "snoRNA 嵌合占比 (Fig 1F)"
+     ]
+    }
+   ]
+  },
+  {
+   "l1": "外部",
+   "name": "PC3 / MDA-MB-231 / A549",
+   "detail": "[小 RNA-seq · Zhang 2021/2019 ?]",
+   "tag": "体外",
+   "methods": [
+    {
+     "text": "小 RNA-seq",
+     "color": "blue",
+     "method": "小 RNA-seq (SE100) ?",
+     "analyses": [
+      "snoRNA 丰度排序 (Top 50)"
+     ]
+    }
+   ]
+  },
+  {
+   "l1": "外部",
+   "name": "HepG2 mRNA 修饰位点",
+   "detail": "[Nm (siControl / siFBL) · J]",
+   "tag": "体外",
+   "methods": [
+    {
+     "text": "Nm-Mut-seq (Chen 2023)",
+     "color": "teal",
+     "method": "ext-mod",
+     "analyses": [
+      "FBL 依赖位点重叠",
+      "与靶位点距离 (box)"
+     ]
+    },
+    {
+     "text": "Pseudo-seq (Martinez)",
+     "color": "teal",
+     "method": "ext-mod",
+     "analyses": [
+      "与 H/ACA 靶标重叠检验"
+     ]
+    }
+   ]
+  },
+  {
+   "l1": "外部",
+   "name": "基因 / 结构注释资源",
+   "detail": "[snoDB · Rfam · GO · PDB …]",
+   "tag": "注释",
+   "methods": [
+    {
+     "text": "snoDB/LBME/snOPY/Atlas",
+     "color": "gray",
+     "method": "ann-snoDB",
+     "analyses": [
+      "已知互作 + box 序列"
+     ]
+    },
+    {
+     "text": "Rfam + UCSC liftOver",
+     "color": "gray",
+     "method": "ann-Rfam",
+     "analyses": [
+      "保守性 (人/猩猩/小鼠)"
+     ]
+    },
+    {
+     "text": "GenBank KY962518.1 + hg38",
+     "color": "gray",
+     "method": "ann-ref",
+     "analyses": [
+      "自定义 rDNA 参考基因组"
+     ]
+    },
+    {
+     "text": "PDB 4UG0 (80S 冷冻电镜)",
+     "color": "gray",
+     "method": "ann-PDB",
+     "analyses": [
+      "PIR 近邻去除 (AF3 半径)"
+     ]
+    },
+    {
+     "text": "GO 术语 (GSEApy)",
+     "color": "gray",
+     "method": "ann-GO",
+     "analyses": [
+      "U3 靶标 GO",
+      "SNORA73 靶标 GO"
+     ]
+    },
+    {
+     "text": "SPRomeDB / HPA / GO 胞外",
+     "color": "gray",
+     "method": "ann-secretome",
+     "analyses": [
+      "分泌蛋白靶标占比"
+     ]
+    },
+    {
+     "text": "Membranome / GO 膜",
+     "color": "gray",
+     "method": "ann-membrane",
+     "analyses": [
+      "膜蛋白靶标占比"
+     ]
+    },
+    {
+     "text": "R2DT 二级结构",
+     "color": "gray",
+     "method": "ann-R2DT",
+     "analyses": [
+      "SNORA73 J 口袋 / MBM / 7BM"
+     ]
+    }
+   ]
+  }
+ ]
+}
