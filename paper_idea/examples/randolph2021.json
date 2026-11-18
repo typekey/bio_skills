@@ -1,0 +1,514 @@
+{
+ "title": "Randolph 2021 Science：论证逻辑链（详细版）",
+ "footer": "证据强度（我的判断）：结论 1、2、5 强；结论 3、6 中强；结论 4、7、8 中弱。数字来自正文与补充材料，红色框是我加的评注。",
+ "sections": [
+  {
+   "title": "背景与研究设计",
+   "color": "#E0A030",
+   "rows": [
+    {
+     "title": "一 · 为什么做",
+     "nodes": [
+      {
+       "type": "why",
+       "fig": "背景",
+       "text": "病毒是人类进化中最强的选择压力之一；历史上的大流行多半有地理分层",
+       "label": ""
+      },
+      {
+       "type": "why",
+       "fig": "背景",
+       "text": "若如此，免疫应答相关变异的频率可能已在人群间分化——既关乎进化史，也关乎今天对病毒的易感性差异",
+       "label": "推论"
+      },
+      {
+       "type": "why",
+       "fig": "已知",
+       "text": "已有研究：>120 个变异预测树突细胞对 IAV 的应答；单核细胞的应答与遗传祖源相关",
+       "label": "已知"
+      },
+      {
+       "type": "why",
+       "fig": "缺口",
+       "text": "但都只看单一细胞类型：看不到细胞间配合，也不知祖源效应是通用还是细胞特异",
+       "label": "但是"
+      },
+      {
+       "type": "why",
+       "fig": "问题",
+       "text": "核心问题：遗传祖源如何影响多种免疫细胞对病毒的早期应答？机制是什么？",
+       "label": "于是问"
+      },
+      {
+       "type": "do",
+       "fig": "设计",
+       "text": "90 名男性 PBMC，mock vs pH1N1 (Cal/04/09, MOI 0.5) 感染 6h；只用男性以避免性别表达差异",
+       "label": "为此做"
+      },
+      {
+       "type": "find",
+       "fig": "Fig 1A–B",
+       "text": "255,731 个细胞 → 235,161 个高质量；89 人完成基因型，估计祖源成分比例；聚成 8 类（5 个主类）",
+       "label": "得到"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Fig 1 · 感染应答",
+   "color": "#2E9C86",
+   "rows": [
+    {
+     "title": "二 · 感染应答 (Fig 1)",
+     "nodes": [
+      {
+       "type": "why",
+       "fig": "追问",
+       "text": "先要弄清：感染到底改变了什么？各细胞类型的应答是否一样？",
+       "label": "引出追问"
+      },
+      {
+       "type": "do",
+       "fig": "Fig 1",
+       "text": "每个主类做 pseudobulk、PCA；limma 差异表达（|log2FC|>0.5，FDR<0.05）",
+       "label": "为此做"
+      },
+      {
+       "type": "find",
+       "fig": "Fig S1B",
+       "text": "PC1 解释 43% 方差，清楚分开 mock 与 IAV（P<1e-10）",
+       "label": "得到"
+      },
+      {
+       "type": "find",
+       "fig": "Fig 1C,E",
+       "text": "单核细胞最敏感：3996 个 DE 基因（38.3%，其他细胞 12.4–19.6%）；胞内 IAV 转录本高 3–6 倍",
+       "label": "细看"
+      },
+      {
+       "type": "find",
+       "fig": "Fig 1F",
+       "text": "各细胞应答整体相关（r=0.65–0.95），但 NK 与单核共有的 815 个基因中 135 个（16.6%）方向相反",
+       "label": "但是"
+      },
+      {
+       "type": "do",
+       "fig": "Fig 1G",
+       "text": "特异性评分：衡量每个基因的应答强度在细胞间的差异",
+       "label": "再量化"
+      },
+      {
+       "type": "find",
+       "fig": "Fig 1G–H",
+       "text": "高特异 = 翻译起始、病毒基因表达；低特异（共享）= I 型 IFN 信号（FDR<1e-10）",
+       "label": "得到"
+      },
+      {
+       "type": "con",
+       "fig": "结论 1",
+       "text": "应答 = 共享 IFN 核心 + 细胞特异外围；必须逐细胞类型分析，bulk 会漏掉或误导",
+       "label": "说明"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Fig 2 · 遗传祖源效应：popDE 与 IFN",
+   "color": "#3B82C4",
+   "rows": [
+    {
+     "title": "三 · 祖源效应 popDE (Fig 2A–C)",
+     "nodes": [
+      {
+       "type": "why",
+       "fig": "追问",
+       "text": "应答既共享又特异——祖源改变的是哪些基因、哪些细胞？",
+       "label": "引出追问"
+      },
+      {
+       "type": "do",
+       "fig": "Fig 2A",
+       "text": "表达 ~ 祖源成分比例，校正年龄、批次；mash 借跨细胞相关性提高功效（lfsr<0.10）",
+       "label": "为此做"
+      },
+      {
+       "type": "find",
+       "fig": "Fig 2A",
+       "text": "1949 个人群差异表达基因（NK 830 – CD4 T 1235）；同一细胞内多数跨条件共享（52.9–77.4%）",
+       "label": "得到"
+      },
+      {
+       "type": "find",
+       "fig": "Fig 2B",
+       "text": "跨细胞高度特异：约 52% 仅出现在 1–2 类细胞；五类都有的只有 17.8%(mock)/24.7%(IAV)",
+       "label": "细看"
+      },
+      {
+       "type": "chk",
+       "fig": "Fig S2C",
+       "text": "对照外部数据：与 Quach 2016 单核 bulk RNA-seq 一致，r=0.662(mock)、0.499(IAV)",
+       "label": "验证"
+      },
+      {
+       "type": "do",
+       "fig": "Fig 2C",
+       "text": "Hallmark 基因集富集：祖源差异集中在哪些通路",
+       "label": "再看通路"
+      },
+      {
+       "type": "find",
+       "fig": "Fig 2C",
+       "text": "单核基线：IFN、TNF/NF-κB、炎症基因在非洲祖源更高；感染后反转，IFN-α/γ 在欧洲祖源更高",
+       "label": "得到"
+      },
+      {
+       "type": "con",
+       "fig": "结论 2",
+       "text": "祖源效应普遍存在、多数细胞特异；IFN 是跨细胞类型的例外",
+       "label": "说明"
+      }
+     ]
+    },
+    {
+     "title": "四 · IFN 例外 (Fig 2D–E)",
+     "nodes": [
+      {
+       "type": "why",
+       "fig": "追问",
+       "text": "IFN 这条跨细胞的例外：祖源影响的是有没有应答，还是应答的幅度？",
+       "label": "引出追问"
+      },
+      {
+       "type": "do",
+       "fig": "Fig 2D",
+       "text": "构建 IFN score：每人 hallmark IFN-α/γ 基因的平均表达",
+       "label": "为此做"
+      },
+      {
+       "type": "find",
+       "fig": "Fig 2D",
+       "text": "感染后欧洲祖源 ↑ IFN score（平均 r=-0.26，meta-P=2.9e-6）；mock 无关（r=-0.0045，P=0.746）",
+       "label": "得到"
+      },
+      {
+       "type": "find",
+       "fig": "Fig S3",
+       "text": "445 个 popDR 基因（应答幅度与祖源相关；单核 272 个，其余 53–181）；欧洲祖源 IFN 应答幅度更强（r=-0.23）",
+       "label": "再看幅度"
+      },
+      {
+       "type": "chk",
+       "fig": "Fig S3C",
+       "text": "排除：基线 IAV 特异 IgG（既往暴露的代理）与祖源无关；HLA 基因型也不能解释",
+       "label": "排除其他解释"
+      },
+      {
+       "type": "find",
+       "fig": "Fig 2E",
+       "text": "IFN 应答越强，胞内 IAV 转录本越多（adj R²=0.55）；欧洲祖源者 IAV 转录本也更高（P=0.002）",
+       "label": "同时发现"
+      },
+      {
+       "type": "con",
+       "fig": "结论 3",
+       "text": "欧洲祖源者感染后早期 I 型 IFN 更强、幅度也更强，不是既往暴露或 HLA 造成",
+       "label": "说明"
+      }
+     ],
+     "lim": {
+      "text": "我的判断：IFN 与病毒转录本正相关，可能是「感染多→IFN 高」的反向关系，不能直接说 IFN 导致病毒少 → 需要功能验证",
+      "label": "但是"
+     }
+    },
+    {
+     "title": "五 · IFN 功能验证 (Fig 2F–G)",
+     "nodes": [
+      {
+       "type": "why",
+       "fig": "追问",
+       "text": "IFN 强到底有没有保护作用？上一步只是相关",
+       "label": "引出追问"
+      },
+      {
+       "type": "do",
+       "fig": "Fig 2F–G",
+       "text": "取 IFN 应答最强与最弱各 10 人，PBMC 再感染；48h 内 8 个时间点测分泌型 IFN，24/48 hpi 测病毒滴度",
+       "label": "为此做"
+      },
+      {
+       "type": "find",
+       "fig": "Fig 2F",
+       "text": "高应答者 IFN-α2 多 4 倍、IFN-β 多 11.6 倍（48 hpi），自 12 hpi 起显著",
+       "label": "得到"
+      },
+      {
+       "type": "find",
+       "fig": "Fig 2G",
+       "text": "病毒滴度更低：24 hpi P=0.001，48 hpi P=0.004",
+       "label": "得到"
+      },
+      {
+       "type": "chk",
+       "fig": "补充",
+       "text": "排除：20 人均无 I 型 IFN 通路的预测功能缺失突变 → 不是罕见变异驱动",
+       "label": "排除"
+      },
+      {
+       "type": "chk",
+       "fig": "文献",
+       "text": "与人类免疫缺陷研究一致：I 型 IFN 缺陷者难以控制病毒，流感风险更高",
+       "label": "印证"
+      },
+      {
+       "type": "con",
+       "fig": "结论 4",
+       "text": "早期 IFN 强 → 后期病毒复制少；串起来：欧洲祖源 → 早期 IFN ↑ → 滴度 ↓",
+       "label": "说明"
+      }
+     ],
+     "lim": {
+      "text": "我的判断：n=20 且按 IFN 极端分组，没有直接按祖源比较；祖源→滴度是两步拼接，证据中等偏弱",
+      "label": "但是"
+     }
+    }
+   ]
+  },
+  {
+   "title": "Fig 3 · 遗传机制与选择信号",
+   "color": "#7A5BC4",
+   "rows": [
+    {
+     "title": "六 · 遗传来源 eQTL (Fig 3A–C)",
+     "nodes": [
+      {
+       "type": "why",
+       "fig": "追问",
+       "text": "祖源差异从哪来？遗传（cis 变异）还是环境？",
+       "label": "引出追问"
+      },
+      {
+       "type": "do",
+       "fig": "Fig 3A",
+       "text": "每个细胞类型×条件做 cis eQTL（基因体 ±100 kb），mash 跨条件共享，lfsr<0.10",
+       "label": "为此做"
+      },
+      {
+       "type": "find",
+       "fig": "Fig 3A",
+       "text": "共 2234 个 eGene",
+       "label": "得到"
+      },
+      {
+       "type": "chk",
+       "fig": "Fig S4A–B",
+       "text": "同样本 bulk RNA-seq 独立验证：eGene 效应量 adj R² ≈ 0.71",
+       "label": "验证"
+      },
+      {
+       "type": "find",
+       "fig": "Fig 3B",
+       "text": "45% 的变异跨细胞/条件共享；每类细胞 13–24% 仅一个条件；29 个 eGene 只在感染后出现（OAS1、IFI44L、IFIT1、IRF1、ISG15）",
+       "label": "细看"
+      },
+      {
+       "type": "find",
+       "fig": "Fig 3C",
+       "text": "eGene 是 popDE 的概率比随机高 3.2–6.5 倍；IFN 相关 popDE 高 1.3–5.0 倍",
+       "label": "再检验"
+      },
+      {
+       "type": "con",
+       "fig": "结论 5",
+       "text": "祖源差异有明显遗传成分，可能来自 eQTL 等位基因频率的人群分化",
+       "label": "说明"
+      }
+     ]
+    },
+    {
+     "title": "七 · 定量 cis 贡献 (Fig 3D)",
+     "nodes": [
+      {
+       "type": "why",
+       "fig": "追问",
+       "text": "这个遗传成分有多大？频率分化能解释多少？",
+       "label": "引出追问"
+      },
+      {
+       "type": "do",
+       "fig": "Fig 3D",
+       "text": "只取 popDE∩eGene 的 835 个基因：top eQTL 效应量 × 每人基因型剂量(0/1/2) → 预测祖源效应，与观察值比较",
+       "label": "为此做"
+      },
+      {
+       "type": "find",
+       "fig": "Fig 3D",
+       "text": "平均解释祖源效应方差的 52.5%(mock) / 53.6%(IAV)",
+       "label": "得到"
+      },
+      {
+       "type": "con",
+       "fig": "结论 6",
+       "text": "有 eQTL 的 popDE 基因中，过半的人群差异来自 cis 调控变异的频率差异",
+       "label": "说明"
+      }
+     ],
+     "lim": {
+      "text": "局限：约一半 popDE 基因没找到 eQTL（trans / 功效不足 / 与祖源相关的环境）；我的判断：top SNP 预测可能高估",
+      "label": "但是"
+     }
+    },
+    {
+     "title": "八 · 选择信号 (Fig 3E–H)",
+     "nodes": [
+      {
+       "type": "why",
+       "fig": "追问",
+       "text": "频率分化是漂变（放松约束），还是自然选择？同一通路多基因方向一致才像选择",
+       "label": "引出追问"
+      },
+      {
+       "type": "find",
+       "fig": "Fig 3E",
+       "text": "popDE∩eGene 做 GO 富集（ClueGO）：转录/翻译通路显著，核糖体小亚基生物发生、病毒转录 FDR<3e-10",
+       "label": "为此做"
+      },
+      {
+       "type": "do",
+       "fig": "Fig 3F",
+       "text": "检验通路内 popDE 效应量中位数：中性=方向随机，选择=方向一致；置换得 P；10 个细胞×条件",
+       "label": "设检验"
+      },
+      {
+       "type": "find",
+       "fig": "Fig 3F–G",
+       "text": "RP 相关通路在各细胞类型一致偏向欧洲祖源更高，mock 与 IAV 都如此",
+       "label": "得到"
+      },
+      {
+       "type": "chk",
+       "fig": "Fig 3F–G",
+       "text": "排除环境：回归掉每基因 top cis SNP 后偏倚消失（病毒转录 33–41 基因）→ 来自 cis 变异",
+       "label": "验证"
+      },
+      {
+       "type": "chk",
+       "fig": "Fig 3H",
+       "text": "RP eGene 表达与 IAV 转录本相关：CD8 T r=0.32（P=0.002），单核 r=0.58",
+       "label": "再验证"
+      },
+      {
+       "type": "con",
+       "fig": "结论 7",
+       "text": "与 RP 通路的多基因选择一致；RP 参与病毒翻译（immunoribosome 假说）",
+       "label": "说明"
+      }
+     ],
+     "lim": {
+      "text": "我的判断：没有中性模型或全基因组背景对照，只能说「一致于」，不是证明；相关≠因果",
+      "label": "但是"
+     }
+    }
+   ]
+  },
+  {
+   "title": "Fig 4 · COVID-19 关联",
+   "color": "#D6559A",
+   "rows": [
+    {
+     "title": "九 · 临床关联 COVID-19 (Fig 4)",
+     "nodes": [
+      {
+       "type": "why",
+       "fig": "追问",
+       "text": "这些祖源差异基因与疾病结局有关吗？用 COVID-19 检验（同为单链 RNA 病毒，通路大量重叠）",
+       "label": "引出追问"
+      },
+      {
+       "type": "do",
+       "fig": "Fig 4",
+       "text": "重分析 Su 等 2020：505,616 个 PBMC、129 名患者（QC 后 127），WOS 严重度；校正年龄、性别、种族",
+       "label": "为此做"
+      },
+      {
+       "type": "find",
+       "fig": "Fig 4A",
+       "text": "单核细胞的严重度基因最多：839 个（lfsr<0.01）",
+       "label": "得到"
+      },
+      {
+       "type": "find",
+       "fig": "Fig 4B–C",
+       "text": "严重度正相关基因是 popDE 的 2.0–2.2 倍（Fisher+置换，P=2.7e-8/3.5e-6）；fgsea 也富集",
+       "label": "检验"
+      },
+      {
+       "type": "find",
+       "fig": "Fig 4D",
+       "text": "严重度基因 69% 在欧洲祖源更高，对比全体 popDE 的 49%（P=5.5e-4/2.4e-3）",
+       "label": "细看"
+      },
+      {
+       "type": "find",
+       "fig": "Fig 4E–F",
+       "text": "S100A4/A6/A8 在感染早期欧洲祖源更高，且与严重度相关",
+       "label": "举例"
+      },
+      {
+       "type": "con",
+       "fig": "结论 8",
+       "text": "祖源差异可能经这些基因，贡献 COVID-19 的人群差异",
+       "label": "说明"
+      }
+     ],
+     "lim": {
+      "text": "局限：IAV 体外 6h ≠ 病人；效应方向会随病程反转（早期上调保护，延迟/晚期上调与重症相关），S100 方向要谨慎",
+      "label": "但是"
+     }
+    }
+   ]
+  },
+  {
+   "title": "讨论：总结与未解决问题",
+   "color": "#6B7280",
+   "rows": [
+    {
+     "title": "十 · 讨论：总结与未解决",
+     "nodes": [
+      {
+       "type": "con",
+       "fig": "总结 1",
+       "text": "祖源效应普遍但细胞特异，IFN 是例外 → 欧洲祖源早期 I 型 IFN 更强，可预测后期病毒更少",
+       "label": "引出总结"
+      },
+      {
+       "type": "con",
+       "fig": "总结 2",
+       "text": "约 53% 的差异由 cis 变异频率分化解释；约一半 popDE 无 eQTL → 还有 trans 或环境",
+       "label": "并且"
+      },
+      {
+       "type": "con",
+       "fig": "总结 3",
+       "text": "RP 是最好的多基因选择候选，也是少见的有功能基因组数据支持的例子",
+       "label": "并且"
+      },
+      {
+       "type": "con",
+       "fig": "总结 4",
+       "text": "祖源差异基因富集在 COVID 严重度基因中 → 可能叠加环境性健康差异",
+       "label": "并且"
+      },
+      {
+       "type": "why",
+       "fig": "未解决",
+       "text": "早期差异是否转化为患者结局？是否延伸到适应性免疫、病毒清除与重症？时间反转如何影响？",
+       "label": "留下"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,617 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2244" height="3174" viewBox="0 0 2244 3174" font-family="Microsoft YaHei, PingFang SC, sans-serif">
+<defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M1 1L9 5L1 9z" fill="#6B7280"/></marker></defs>
+<rect width="2244" height="3174" fill="#FFFFFF"/>
+<text x="40" y="40" font-size="24" font-weight="700" fill="#1F2937">Randolph 2021 Science：论证逻辑链（详细版）</text>
+<text x="40" y="66" font-size="14" fill="#6B7280">每行 = 一轮「为什么做 → 做法 → 发现 → 验证 → 结论」；上一行的结论引出下一行的追问（橙色虚线）。红色虚线框 = 局限 / 我的判断。</text>
+<rect x="1616" y="22" width="16" height="16" rx="4" fill="#FFF3DC" stroke="#E0A030" stroke-width="1.5"/><text x="1638" y="35" font-size="13" fill="#374151">为什么做</text>
+<rect x="1714" y="22" width="16" height="16" rx="4" fill="#EEF0F3" stroke="#7C8696" stroke-width="1.5"/><text x="1736" y="35" font-size="13" fill="#374151">做法</text>
+<rect x="1812" y="22" width="16" height="16" rx="4" fill="#DDF3EE" stroke="#2E9C86" stroke-width="1.5"/><text x="1834" y="35" font-size="13" fill="#374151">发现</text>
+<rect x="1910" y="22" width="16" height="16" rx="4" fill="#E3F3D8" stroke="#5FA33A" stroke-width="1.5"/><text x="1932" y="35" font-size="13" fill="#374151">验证</text>
+<rect x="2008" y="22" width="16" height="16" rx="4" fill="#EBE3F8" stroke="#7A5BC4" stroke-width="1.5"/><text x="2030" y="35" font-size="13" fill="#374151">结论</text>
+<rect x="2106" y="22" width="16" height="16" rx="4" fill="#FBE4E1" stroke="#D2554A" stroke-width="1.5"/><text x="2128" y="35" font-size="13" fill="#374151">局限</text>
+<rect x="1032.5" y="92" width="179.0" height="34" rx="17" fill="#E0A030"/>
+<text x="1122.0" y="115" font-size="17" font-weight="700" fill="#FFFFFF" text-anchor="middle">背景与研究设计</text>
+<rect x="1020.6" y="462" width="202.79999999999998" height="34" rx="17" fill="#2E9C86"/>
+<text x="1122.0" y="485" font-size="17" font-weight="700" fill="#FFFFFF" text-anchor="middle">Fig 1 · 感染应答</text>
+<rect x="939.85" y="832" width="364.29999999999995" height="34" rx="17" fill="#3B82C4"/>
+<text x="1122.0" y="855" font-size="17" font-weight="700" fill="#FFFFFF" text-anchor="middle">Fig 2 · 遗传祖源效应：popDE 与 IFN</text>
+<rect x="978.1" y="1662" width="287.79999999999995" height="34" rx="17" fill="#7A5BC4"/>
+<text x="1122.0" y="1685" font-size="17" font-weight="700" fill="#FFFFFF" text-anchor="middle">Fig 3 · 遗传机制与选择信号</text>
+<rect x="995.525" y="2492" width="252.95000000000002" height="34" rx="17" fill="#D6559A"/>
+<text x="1122.0" y="2515" font-size="17" font-weight="700" fill="#FFFFFF" text-anchor="middle">Fig 4 · COVID-19 关联</text>
+<rect x="998.5" y="2862" width="247.0" height="34" rx="17" fill="#6B7280"/>
+<text x="1122.0" y="2885" font-size="17" font-weight="700" fill="#FFFFFF" text-anchor="middle">讨论：总结与未解决问题</text>
+<rect x="14" y="142" width="2216" height="194" rx="14" fill="#F8FAFC" stroke="#E5E7EB"/>
+<rect x="14" y="150" width="6" height="178" rx="3" fill="#E0A030"/>
+<text x="2216" y="159" font-size="13" font-weight="700" fill="#9CA3AF" text-anchor="end">一 · 为什么做</text>
+<rect x="14" y="512" width="2216" height="194" rx="14" fill="#F8FAFC" stroke="#E5E7EB"/>
+<rect x="14" y="520" width="6" height="178" rx="3" fill="#2E9C86"/>
+<text x="2216" y="529" font-size="13" font-weight="700" fill="#9CA3AF" text-anchor="end">二 · 感染应答 (Fig 1)</text>
+<rect x="14" y="882" width="2216" height="194" rx="14" fill="#F8FAFC" stroke="#E5E7EB"/>
+<rect x="14" y="890" width="6" height="178" rx="3" fill="#3B82C4"/>
+<text x="2216" y="899" font-size="13" font-weight="700" fill="#9CA3AF" text-anchor="end">三 · 祖源效应 popDE (Fig 2A–C)</text>
+<rect x="14" y="1112" width="2216" height="194" rx="14" fill="#F8FAFC" stroke="#E5E7EB"/>
+<rect x="14" y="1120" width="6" height="178" rx="3" fill="#3B82C4"/>
+<text x="2216" y="1129" font-size="13" font-weight="700" fill="#9CA3AF" text-anchor="end">四 · IFN 例外 (Fig 2D–E)</text>
+<rect x="14" y="1342" width="2216" height="194" rx="14" fill="#F8FAFC" stroke="#E5E7EB"/>
+<rect x="14" y="1350" width="6" height="178" rx="3" fill="#3B82C4"/>
+<text x="2216" y="1359" font-size="13" font-weight="700" fill="#9CA3AF" text-anchor="end">五 · IFN 功能验证 (Fig 2F–G)</text>
+<rect x="14" y="1712" width="2216" height="194" rx="14" fill="#F8FAFC" stroke="#E5E7EB"/>
+<rect x="14" y="1720" width="6" height="178" rx="3" fill="#7A5BC4"/>
+<text x="2216" y="1729" font-size="13" font-weight="700" fill="#9CA3AF" text-anchor="end">六 · 遗传来源 eQTL (Fig 3A–C)</text>
+<rect x="14" y="1942" width="2216" height="194" rx="14" fill="#F8FAFC" stroke="#E5E7EB"/>
+<rect x="14" y="1950" width="6" height="178" rx="3" fill="#7A5BC4"/>
+<text x="2216" y="1959" font-size="13" font-weight="700" fill="#9CA3AF" text-anchor="end">七 · 定量 cis 贡献 (Fig 3D)</text>
+<rect x="14" y="2172" width="2216" height="194" rx="14" fill="#F8FAFC" stroke="#E5E7EB"/>
+<rect x="14" y="2180" width="6" height="178" rx="3" fill="#7A5BC4"/>
+<text x="2216" y="2189" font-size="13" font-weight="700" fill="#9CA3AF" text-anchor="end">八 · 选择信号 (Fig 3E–H)</text>
+<rect x="14" y="2542" width="2216" height="194" rx="14" fill="#F8FAFC" stroke="#E5E7EB"/>
+<rect x="14" y="2550" width="6" height="178" rx="3" fill="#D6559A"/>
+<text x="2216" y="2559" font-size="13" font-weight="700" fill="#9CA3AF" text-anchor="end">九 · 临床关联 COVID-19 (Fig 4)</text>
+<rect x="14" y="2912" width="2216" height="194" rx="14" fill="#F8FAFC" stroke="#E5E7EB"/>
+<rect x="14" y="2920" width="6" height="178" rx="3" fill="#6B7280"/>
+<text x="2216" y="2929" font-size="13" font-weight="700" fill="#9CA3AF" text-anchor="end">十 · 讨论：总结与未解决</text>
+<line x1="273" y1="246.0" x2="313" y2="246.0" stroke="#6B7280" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="278.0" y="225.0" width="32.0" height="17" rx="8" fill="#F8FAFC"/><text x="294.0" y="238.0" font-size="11" text-anchor="middle" fill="#6B7280">推论</text>
+<line x1="549" y1="246.0" x2="589" y2="246.0" stroke="#6B7280" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="554.0" y="225.0" width="32.0" height="17" rx="8" fill="#F8FAFC"/><text x="570.0" y="238.0" font-size="11" text-anchor="middle" fill="#6B7280">已知</text>
+<line x1="825" y1="246.0" x2="865" y2="246.0" stroke="#6B7280" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="830.0" y="225.0" width="32.0" height="17" rx="8" fill="#F8FAFC"/><text x="846.0" y="238.0" font-size="11" text-anchor="middle" fill="#6B7280">但是</text>
+<line x1="1101" y1="246.0" x2="1141" y2="246.0" stroke="#6B7280" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="1100.5" y="225.0" width="43.0" height="17" rx="8" fill="#F8FAFC"/><text x="1122.0" y="238.0" font-size="11" text-anchor="middle" fill="#6B7280">于是问</text>
+<line x1="1377" y1="246.0" x2="1417" y2="246.0" stroke="#6B7280" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="1376.5" y="225.0" width="43.0" height="17" rx="8" fill="#F8FAFC"/><text x="1398.0" y="238.0" font-size="11" text-anchor="middle" fill="#6B7280">为此做</text>
+<line x1="1653" y1="246.0" x2="1693" y2="246.0" stroke="#6B7280" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="1658.0" y="225.0" width="32.0" height="17" rx="8" fill="#F8FAFC"/><text x="1674.0" y="238.0" font-size="11" text-anchor="middle" fill="#6B7280">得到</text>
+<path d="M1812.0 325V361H156.0V535" fill="none" stroke="#B45309" stroke-width="2.2" stroke-dasharray="7 4" marker-end="url(#ar)"/>
+<rect x="957.0" y="352" width="54.0" height="17" rx="8" fill="#F8FAFC"/><text x="984.0" y="365" font-size="11" text-anchor="middle" fill="#6B7280">引出追问</text>
+<line x1="273" y1="616.0" x2="313" y2="616.0" stroke="#6B7280" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="272.5" y="595.0" width="43.0" height="17" rx="8" fill="#F8FAFC"/><text x="294.0" y="608.0" font-size="11" text-anchor="middle" fill="#6B7280">为此做</text>
+<line x1="549" y1="616.0" x2="589" y2="616.0" stroke="#6B7280" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="554.0" y="595.0" width="32.0" height="17" rx="8" fill="#F8FAFC"/><text x="570.0" y="608.0" font-size="11" text-anchor="middle" fill="#6B7280">得到</text>
+<line x1="825" y1="616.0" x2="865" y2="616.0" stroke="#6B7280" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="830.0" y="595.0" width="32.0" height="17" rx="8" fill="#F8FAFC"/><text x="846.0" y="608.0" font-size="11" text-anchor="middle" fill="#6B7280">细看</text>
+<line x1="1101" y1="616.0" x2="1141" y2="616.0" stroke="#6B7280" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="1106.0" y="595.0" width="32.0" height="17" rx="8" fill="#F8FAFC"/><text x="1122.0" y="608.0" font-size="11" text-anchor="middle" fill="#6B7280">但是</text>
+<line x1="1377" y1="616.0" x2="1417" y2="616.0" stroke="#6B7280" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="1376.5" y="595.0" width="43.0" height="17" rx="8" fill="#F8FAFC"/><text x="1398.0" y="608.0" font-size="11" text-anchor="middle" fill="#6B7280">再量化</text>
+<line x1="1653" y1="616.0" x2="1693" y2="616.0" stroke="#6B7280" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="1658.0" y="595.0" width="32.0" height="17" rx="8" fill="#F8FAFC"/><text x="1674.0" y="608.0" font-size="11" text-anchor="middle" fill="#6B7280">得到</text>
+<line x1="1929" y1="616.0" x2="1969" y2="616.0" stroke="#6B7280" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="1934.0" y="595.0" width="32.0" height="17" rx="8" fill="#F8FAFC"/><text x="1950.0" y="608.0" font-size="11" text-anchor="middle" fill="#6B7280">说明</text>
+<path d="M2088.0 695V731H156.0V905" fill="none" stroke="#B45309" stroke-width="2.2" stroke-dasharray="7 4" marker-end="url(#ar)"/>
+<rect x="1095.0" y="722" width="54.0" height="17" rx="8" fill="#F8FAFC"/><text x="1122.0" y="735" font-size="11" text-anchor="middle" fill="#6B7280">引出追问</text>
+<line x1="273" y1="986.0" x2="313" y2="986.0" stroke="#6B7280" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="272.5" y="965.0" width="43.0" height="17" rx="8" fill="#F8FAFC"/><text x="294.0" y="978.0" font-size="11" text-anchor="middle" fill="#6B7280">为此做</text>
+<line x1="549" y1="986.0" x2="589" y2="986.0" stroke="#6B7280" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="554.0" y="965.0" width="32.0" height="17" rx="8" fill="#F8FAFC"/><text x="570.0" y="978.0" font-size="11" text-anchor="middle" fill="#6B7280">得到</text>
+<line x1="825" y1="986.0" x2="865" y2="986.0" stroke="#6B7280" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="830.0" y="965.0" width="32.0" height="17" rx="8" fill="#F8FAFC"/><text x="846.0" y="978.0" font-size="11" text-anchor="middle" fill="#6B7280">细看</text>
+<line x1="1101" y1="986.0" x2="1141" y2="986.0" stroke="#6B7280" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="1106.0" y="965.0" width="32.0" height="17" rx="8" fill="#F8FAFC"/><text x="1122.0" y="978.0" font-size="11" text-anchor="middle" fill="#6B7280">验证</text>
+<line x1="1377" y1="986.0" x2="1417" y2="986.0" stroke="#6B7280" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="1371.0" y="965.0" width="54.0" height="17" rx="8" fill="#F8FAFC"/><text x="1398.0" y="978.0" font-size="11" text-anchor="middle" fill="#6B7280">再看通路</text>
+<line x1="1653" y1="986.0" x2="1693" y2="986.0" stroke="#6B7280" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="1658.0" y="965.0" width="32.0" height="17" rx="8" fill="#F8FAFC"/><text x="1674.0" y="978.0" font-size="11" text-anchor="middle" fill="#6B7280">得到</text>
+<line x1="1929" y1="986.0" x2="1969" y2="986.0" stroke="#6B7280" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="1934.0" y="965.0" width="32.0" height="17" rx="8" fill="#F8FAFC"/><text x="1950.0" y="978.0" font-size="11" text-anchor="middle" fill="#6B7280">说明</text>
+<path d="M2088.0 1065V1101H156.0V1135" fill="none" stroke="#B45309" stroke-width="2.2" stroke-dasharray="7 4" marker-end="url(#ar)"/>
+<rect x="1095.0" y="1092" width="54.0" height="17" rx="8" fill="#F8FAFC"/><text x="1122.0" y="1105" font-size="11" text-anchor="middle" fill="#6B7280">引出追问</text>
+<line x1="273" y1="1216.0" x2="313" y2="1216.0" stroke="#6B7280" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="272.5" y="1195.0" width="43.0" height="17" rx="8" fill="#F8FAFC"/><text x="294.0" y="1208.0" font-size="11" text-anchor="middle" fill="#6B7280">为此做</text>
+<line x1="549" y1="1216.0" x2="589" y2="1216.0" stroke="#6B7280" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="554.0" y="1195.0" width="32.0" height="17" rx="8" fill="#F8FAFC"/><text x="570.0" y="1208.0" font-size="11" text-anchor="middle" fill="#6B7280">得到</text>
+<line x1="825" y1="1216.0" x2="865" y2="1216.0" stroke="#6B7280" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="819.0" y="1195.0" width="54.0" height="17" rx="8" fill="#F8FAFC"/><text x="846.0" y="1208.0" font-size="11" text-anchor="middle" fill="#6B7280">再看幅度</text>
+<line x1="1101" y1="1216.0" x2="1141" y2="1216.0" stroke="#6B7280" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="1084.0" y="1195.0" width="76.0" height="17" rx="8" fill="#F8FAFC"/><text x="1122.0" y="1208.0" font-size="11" text-anchor="middle" fill="#6B7280">排除其他解释</text>
+<line x1="1377" y1="1216.0" x2="1417" y2="1216.0" stroke="#6B7280" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="1371.0" y="1195.0" width="54.0" height="17" rx="8" fill="#F8FAFC"/><text x="1398.0" y="1208.0" font-size="11" text-anchor="middle" fill="#6B7280">同时发现</text>
+<line x1="1653" y1="1216.0" x2="1693" y2="1216.0" stroke="#6B7280" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="1658.0" y="1195.0" width="32.0" height="17" rx="8" fill="#F8FAFC"/><text x="1674.0" y="1208.0" font-size="11" text-anchor="middle" fill="#6B7280">说明</text>
+<line x1="1929" y1="1216.0" x2="1969" y2="1216.0" stroke="#D2554A" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="1934.0" y="1195.0" width="32.0" height="17" rx="8" fill="#F8FAFC"/><text x="1950.0" y="1208.0" font-size="11" text-anchor="middle" fill="#6B7280">但是</text>
+<path d="M1812.0 1295V1331H156.0V1365" fill="none" stroke="#B45309" stroke-width="2.2" stroke-dasharray="7 4" marker-end="url(#ar)"/>
+<rect x="957.0" y="1322" width="54.0" height="17" rx="8" fill="#F8FAFC"/><text x="984.0" y="1335" font-size="11" text-anchor="middle" fill="#6B7280">引出追问</text>
+<line x1="273" y1="1446.0" x2="313" y2="1446.0" stroke="#6B7280" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="272.5" y="1425.0" width="43.0" height="17" rx="8" fill="#F8FAFC"/><text x="294.0" y="1438.0" font-size="11" text-anchor="middle" fill="#6B7280">为此做</text>
+<line x1="549" y1="1446.0" x2="589" y2="1446.0" stroke="#6B7280" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="554.0" y="1425.0" width="32.0" height="17" rx="8" fill="#F8FAFC"/><text x="570.0" y="1438.0" font-size="11" text-anchor="middle" fill="#6B7280">得到</text>
+<line x1="825" y1="1446.0" x2="865" y2="1446.0" stroke="#6B7280" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="830.0" y="1425.0" width="32.0" height="17" rx="8" fill="#F8FAFC"/><text x="846.0" y="1438.0" font-size="11" text-anchor="middle" fill="#6B7280">得到</text>
+<line x1="1101" y1="1446.0" x2="1141" y2="1446.0" stroke="#6B7280" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="1106.0" y="1425.0" width="32.0" height="17" rx="8" fill="#F8FAFC"/><text x="1122.0" y="1438.0" font-size="11" text-anchor="middle" fill="#6B7280">排除</text>
+<line x1="1377" y1="1446.0" x2="1417" y2="1446.0" stroke="#6B7280" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="1382.0" y="1425.0" width="32.0" height="17" rx="8" fill="#F8FAFC"/><text x="1398.0" y="1438.0" font-size="11" text-anchor="middle" fill="#6B7280">印证</text>
+<line x1="1653" y1="1446.0" x2="1693" y2="1446.0" stroke="#6B7280" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="1658.0" y="1425.0" width="32.0" height="17" rx="8" fill="#F8FAFC"/><text x="1674.0" y="1438.0" font-size="11" text-anchor="middle" fill="#6B7280">说明</text>
+<line x1="1929" y1="1446.0" x2="1969" y2="1446.0" stroke="#D2554A" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="1934.0" y="1425.0" width="32.0" height="17" rx="8" fill="#F8FAFC"/><text x="1950.0" y="1438.0" font-size="11" text-anchor="middle" fill="#6B7280">但是</text>
+<path d="M1812.0 1525V1561H156.0V1735" fill="none" stroke="#B45309" stroke-width="2.2" stroke-dasharray="7 4" marker-end="url(#ar)"/>
+<rect x="957.0" y="1552" width="54.0" height="17" rx="8" fill="#F8FAFC"/><text x="984.0" y="1565" font-size="11" text-anchor="middle" fill="#6B7280">引出追问</text>
+<line x1="273" y1="1816.0" x2="313" y2="1816.0" stroke="#6B7280" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="272.5" y="1795.0" width="43.0" height="17" rx="8" fill="#F8FAFC"/><text x="294.0" y="1808.0" font-size="11" text-anchor="middle" fill="#6B7280">为此做</text>
+<line x1="549" y1="1816.0" x2="589" y2="1816.0" stroke="#6B7280" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="554.0" y="1795.0" width="32.0" height="17" rx="8" fill="#F8FAFC"/><text x="570.0" y="1808.0" font-size="11" text-anchor="middle" fill="#6B7280">得到</text>
+<line x1="825" y1="1816.0" x2="865" y2="1816.0" stroke="#6B7280" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="830.0" y="1795.0" width="32.0" height="17" rx="8" fill="#F8FAFC"/><text x="846.0" y="1808.0" font-size="11" text-anchor="middle" fill="#6B7280">验证</text>
+<line x1="1101" y1="1816.0" x2="1141" y2="1816.0" stroke="#6B7280" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="1106.0" y="1795.0" width="32.0" height="17" rx="8" fill="#F8FAFC"/><text x="1122.0" y="1808.0" font-size="11" text-anchor="middle" fill="#6B7280">细看</text>
+<line x1="1377" y1="1816.0" x2="1417" y2="1816.0" stroke="#6B7280" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="1376.5" y="1795.0" width="43.0" height="17" rx="8" fill="#F8FAFC"/><text x="1398.0" y="1808.0" font-size="11" text-anchor="middle" fill="#6B7280">再检验</text>
+<line x1="1653" y1="1816.0" x2="1693" y2="1816.0" stroke="#6B7280" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="1658.0" y="1795.0" width="32.0" height="17" rx="8" fill="#F8FAFC"/><text x="1674.0" y="1808.0" font-size="11" text-anchor="middle" fill="#6B7280">说明</text>
+<path d="M1812.0 1895V1931H156.0V1965" fill="none" stroke="#B45309" stroke-width="2.2" stroke-dasharray="7 4" marker-end="url(#ar)"/>
+<rect x="957.0" y="1922" width="54.0" height="17" rx="8" fill="#F8FAFC"/><text x="984.0" y="1935" font-size="11" text-anchor="middle" fill="#6B7280">引出追问</text>
+<line x1="273" y1="2046.0" x2="313" y2="2046.0" stroke="#6B7280" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="272.5" y="2025.0" width="43.0" height="17" rx="8" fill="#F8FAFC"/><text x="294.0" y="2038.0" font-size="11" text-anchor="middle" fill="#6B7280">为此做</text>
+<line x1="549" y1="2046.0" x2="589" y2="2046.0" stroke="#6B7280" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="554.0" y="2025.0" width="32.0" height="17" rx="8" fill="#F8FAFC"/><text x="570.0" y="2038.0" font-size="11" text-anchor="middle" fill="#6B7280">得到</text>
+<line x1="825" y1="2046.0" x2="865" y2="2046.0" stroke="#6B7280" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="830.0" y="2025.0" width="32.0" height="17" rx="8" fill="#F8FAFC"/><text x="846.0" y="2038.0" font-size="11" text-anchor="middle" fill="#6B7280">说明</text>
+<line x1="1101" y1="2046.0" x2="1141" y2="2046.0" stroke="#D2554A" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="1106.0" y="2025.0" width="32.0" height="17" rx="8" fill="#F8FAFC"/><text x="1122.0" y="2038.0" font-size="11" text-anchor="middle" fill="#6B7280">但是</text>
+<path d="M984.0 2125V2161H156.0V2195" fill="none" stroke="#B45309" stroke-width="2.2" stroke-dasharray="7 4" marker-end="url(#ar)"/>
+<rect x="543.0" y="2152" width="54.0" height="17" rx="8" fill="#F8FAFC"/><text x="570.0" y="2165" font-size="11" text-anchor="middle" fill="#6B7280">引出追问</text>
+<line x1="273" y1="2276.0" x2="313" y2="2276.0" stroke="#6B7280" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="272.5" y="2255.0" width="43.0" height="17" rx="8" fill="#F8FAFC"/><text x="294.0" y="2268.0" font-size="11" text-anchor="middle" fill="#6B7280">为此做</text>
+<line x1="549" y1="2276.0" x2="589" y2="2276.0" stroke="#6B7280" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="548.5" y="2255.0" width="43.0" height="17" rx="8" fill="#F8FAFC"/><text x="570.0" y="2268.0" font-size="11" text-anchor="middle" fill="#6B7280">设检验</text>
+<line x1="825" y1="2276.0" x2="865" y2="2276.0" stroke="#6B7280" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="830.0" y="2255.0" width="32.0" height="17" rx="8" fill="#F8FAFC"/><text x="846.0" y="2268.0" font-size="11" text-anchor="middle" fill="#6B7280">得到</text>
+<line x1="1101" y1="2276.0" x2="1141" y2="2276.0" stroke="#6B7280" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="1106.0" y="2255.0" width="32.0" height="17" rx="8" fill="#F8FAFC"/><text x="1122.0" y="2268.0" font-size="11" text-anchor="middle" fill="#6B7280">验证</text>
+<line x1="1377" y1="2276.0" x2="1417" y2="2276.0" stroke="#6B7280" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="1376.5" y="2255.0" width="43.0" height="17" rx="8" fill="#F8FAFC"/><text x="1398.0" y="2268.0" font-size="11" text-anchor="middle" fill="#6B7280">再验证</text>
+<line x1="1653" y1="2276.0" x2="1693" y2="2276.0" stroke="#6B7280" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="1658.0" y="2255.0" width="32.0" height="17" rx="8" fill="#F8FAFC"/><text x="1674.0" y="2268.0" font-size="11" text-anchor="middle" fill="#6B7280">说明</text>
+<line x1="1929" y1="2276.0" x2="1969" y2="2276.0" stroke="#D2554A" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="1934.0" y="2255.0" width="32.0" height="17" rx="8" fill="#F8FAFC"/><text x="1950.0" y="2268.0" font-size="11" text-anchor="middle" fill="#6B7280">但是</text>
+<path d="M1812.0 2355V2391H156.0V2565" fill="none" stroke="#B45309" stroke-width="2.2" stroke-dasharray="7 4" marker-end="url(#ar)"/>
+<rect x="957.0" y="2382" width="54.0" height="17" rx="8" fill="#F8FAFC"/><text x="984.0" y="2395" font-size="11" text-anchor="middle" fill="#6B7280">引出追问</text>
+<line x1="273" y1="2646.0" x2="313" y2="2646.0" stroke="#6B7280" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="272.5" y="2625.0" width="43.0" height="17" rx="8" fill="#F8FAFC"/><text x="294.0" y="2638.0" font-size="11" text-anchor="middle" fill="#6B7280">为此做</text>
+<line x1="549" y1="2646.0" x2="589" y2="2646.0" stroke="#6B7280" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="554.0" y="2625.0" width="32.0" height="17" rx="8" fill="#F8FAFC"/><text x="570.0" y="2638.0" font-size="11" text-anchor="middle" fill="#6B7280">得到</text>
+<line x1="825" y1="2646.0" x2="865" y2="2646.0" stroke="#6B7280" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="830.0" y="2625.0" width="32.0" height="17" rx="8" fill="#F8FAFC"/><text x="846.0" y="2638.0" font-size="11" text-anchor="middle" fill="#6B7280">检验</text>
+<line x1="1101" y1="2646.0" x2="1141" y2="2646.0" stroke="#6B7280" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="1106.0" y="2625.0" width="32.0" height="17" rx="8" fill="#F8FAFC"/><text x="1122.0" y="2638.0" font-size="11" text-anchor="middle" fill="#6B7280">细看</text>
+<line x1="1377" y1="2646.0" x2="1417" y2="2646.0" stroke="#6B7280" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="1382.0" y="2625.0" width="32.0" height="17" rx="8" fill="#F8FAFC"/><text x="1398.0" y="2638.0" font-size="11" text-anchor="middle" fill="#6B7280">举例</text>
+<line x1="1653" y1="2646.0" x2="1693" y2="2646.0" stroke="#6B7280" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="1658.0" y="2625.0" width="32.0" height="17" rx="8" fill="#F8FAFC"/><text x="1674.0" y="2638.0" font-size="11" text-anchor="middle" fill="#6B7280">说明</text>
+<line x1="1929" y1="2646.0" x2="1969" y2="2646.0" stroke="#D2554A" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="1934.0" y="2625.0" width="32.0" height="17" rx="8" fill="#F8FAFC"/><text x="1950.0" y="2638.0" font-size="11" text-anchor="middle" fill="#6B7280">但是</text>
+<path d="M1812.0 2725V2761H156.0V2935" fill="none" stroke="#B45309" stroke-width="2.2" stroke-dasharray="7 4" marker-end="url(#ar)"/>
+<rect x="957.0" y="2752" width="54.0" height="17" rx="8" fill="#F8FAFC"/><text x="984.0" y="2765" font-size="11" text-anchor="middle" fill="#6B7280">引出总结</text>
+<line x1="273" y1="3016.0" x2="313" y2="3016.0" stroke="#6B7280" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="278.0" y="2995.0" width="32.0" height="17" rx="8" fill="#F8FAFC"/><text x="294.0" y="3008.0" font-size="11" text-anchor="middle" fill="#6B7280">并且</text>
+<line x1="549" y1="3016.0" x2="589" y2="3016.0" stroke="#6B7280" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="554.0" y="2995.0" width="32.0" height="17" rx="8" fill="#F8FAFC"/><text x="570.0" y="3008.0" font-size="11" text-anchor="middle" fill="#6B7280">并且</text>
+<line x1="825" y1="3016.0" x2="865" y2="3016.0" stroke="#6B7280" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="830.0" y="2995.0" width="32.0" height="17" rx="8" fill="#F8FAFC"/><text x="846.0" y="3008.0" font-size="11" text-anchor="middle" fill="#6B7280">并且</text>
+<line x1="1101" y1="3016.0" x2="1141" y2="3016.0" stroke="#6B7280" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="1106.0" y="2995.0" width="32.0" height="17" rx="8" fill="#F8FAFC"/><text x="1122.0" y="3008.0" font-size="11" text-anchor="middle" fill="#6B7280">留下</text>
+<rect x="40" y="168" width="232" height="156" rx="10" fill="#FFF3DC" stroke="#E0A030" stroke-width="2"/>
+<text x="52" y="190" font-size="12.5" font-weight="700" fill="#E0A030">为什么做</text>
+<text x="260" y="190" font-size="12" text-anchor="end" fill="#6B7280">背景</text>
+<text x="52" y="214" font-size="13" fill="#1F2937">病毒是人类进化中最强的选择压力之</text>
+<text x="52" y="233" font-size="13" fill="#1F2937">一；历史上的大流行多半有地理分层</text>
+<rect x="316" y="168" width="232" height="156" rx="10" fill="#FFF3DC" stroke="#E0A030" stroke-width="2"/>
+<text x="328" y="190" font-size="12.5" font-weight="700" fill="#E0A030">为什么做</text>
+<text x="536" y="190" font-size="12" text-anchor="end" fill="#6B7280">背景</text>
+<text x="328" y="214" font-size="13" fill="#1F2937">若如此，免疫应答相关变异的频率可</text>
+<text x="328" y="233" font-size="13" fill="#1F2937">能已在人群间分化——既关乎进化史，</text>
+<text x="328" y="252" font-size="13" fill="#1F2937">也关乎今天对病毒的易感性差异</text>
+<rect x="592" y="168" width="232" height="156" rx="10" fill="#FFF3DC" stroke="#E0A030" stroke-width="2"/>
+<text x="604" y="190" font-size="12.5" font-weight="700" fill="#E0A030">为什么做</text>
+<text x="812" y="190" font-size="12" text-anchor="end" fill="#6B7280">已知</text>
+<text x="604" y="214" font-size="13" fill="#1F2937">已有研究：&gt;120 个变异预测树突细</text>
+<text x="604" y="233" font-size="13" fill="#1F2937">胞对 IAV 的应答；单核细胞的应答</text>
+<text x="604" y="252" font-size="13" fill="#1F2937">与遗传祖源相关</text>
+<rect x="868" y="168" width="232" height="156" rx="10" fill="#FFF3DC" stroke="#E0A030" stroke-width="2"/>
+<text x="880" y="190" font-size="12.5" font-weight="700" fill="#E0A030">为什么做</text>
+<text x="1088" y="190" font-size="12" text-anchor="end" fill="#6B7280">缺口</text>
+<text x="880" y="214" font-size="13" fill="#1F2937">但都只看单一细胞类型：看不到细胞</text>
+<text x="880" y="233" font-size="13" fill="#1F2937">间配合，也不知祖源效应是通用还是</text>
+<text x="880" y="252" font-size="13" fill="#1F2937">细胞特异</text>
+<rect x="1144" y="168" width="232" height="156" rx="10" fill="#FFF3DC" stroke="#E0A030" stroke-width="2"/>
+<text x="1156" y="190" font-size="12.5" font-weight="700" fill="#E0A030">为什么做</text>
+<text x="1364" y="190" font-size="12" text-anchor="end" fill="#6B7280">问题</text>
+<text x="1156" y="214" font-size="13" fill="#1F2937">核心问题：遗传祖源如何影响多种免</text>
+<text x="1156" y="233" font-size="13" fill="#1F2937">疫细胞对病毒的早期应答？机制是什</text>
+<text x="1156" y="252" font-size="13" fill="#1F2937">么？</text>
+<rect x="1420" y="168" width="232" height="156" rx="10" fill="#EEF0F3" stroke="#7C8696" stroke-width="2"/>
+<text x="1432" y="190" font-size="12.5" font-weight="700" fill="#7C8696">做法</text>
+<text x="1640" y="190" font-size="12" text-anchor="end" fill="#6B7280">设计</text>
+<text x="1432" y="214" font-size="13" fill="#1F2937">90 名男性 PBMC，mock vs pH1N1</text>
+<text x="1432" y="233" font-size="13" fill="#1F2937">(Cal/04/09, MOI 0.5) 感染 6h；</text>
+<text x="1432" y="252" font-size="13" fill="#1F2937">只用男性以避免性别表达差异</text>
+<rect x="1696" y="168" width="232" height="156" rx="10" fill="#DDF3EE" stroke="#2E9C86" stroke-width="2"/>
+<text x="1708" y="190" font-size="12.5" font-weight="700" fill="#2E9C86">发现</text>
+<text x="1916" y="190" font-size="12" text-anchor="end" fill="#6B7280">Fig 1A–B</text>
+<text x="1708" y="214" font-size="13" fill="#1F2937">255,731 个细胞 → 235,161 个高</text>
+<text x="1708" y="233" font-size="13" fill="#1F2937">质量；89 人完成基因型，估计祖源</text>
+<text x="1708" y="252" font-size="13" fill="#1F2937">成分比例；聚成 8 类（5 个主类）</text>
+<rect x="40" y="538" width="232" height="156" rx="10" fill="#FFF3DC" stroke="#E0A030" stroke-width="2"/>
+<text x="52" y="560" font-size="12.5" font-weight="700" fill="#E0A030">为什么做</text>
+<text x="260" y="560" font-size="12" text-anchor="end" fill="#6B7280">追问</text>
+<text x="52" y="584" font-size="13" fill="#1F2937">先要弄清：感染到底改变了什么？各</text>
+<text x="52" y="603" font-size="13" fill="#1F2937">细胞类型的应答是否一样？</text>
+<rect x="316" y="538" width="232" height="156" rx="10" fill="#EEF0F3" stroke="#7C8696" stroke-width="2"/>
+<text x="328" y="560" font-size="12.5" font-weight="700" fill="#7C8696">做法</text>
+<text x="536" y="560" font-size="12" text-anchor="end" fill="#6B7280">Fig 1</text>
+<text x="328" y="584" font-size="13" fill="#1F2937">每个主类做 pseudobulk、PCA；</text>
+<text x="328" y="603" font-size="13" fill="#1F2937">limma 差异表达（|log2FC|&gt;0.5，</text>
+<text x="328" y="622" font-size="13" fill="#1F2937">FDR&lt;0.05）</text>
+<rect x="592" y="538" width="232" height="156" rx="10" fill="#DDF3EE" stroke="#2E9C86" stroke-width="2"/>
+<text x="604" y="560" font-size="12.5" font-weight="700" fill="#2E9C86">发现</text>
+<text x="812" y="560" font-size="12" text-anchor="end" fill="#6B7280">Fig S1B</text>
+<text x="604" y="584" font-size="13" fill="#1F2937">PC1 解释 43% 方差，清楚分开 </text>
+<text x="604" y="603" font-size="13" fill="#1F2937">mock 与 IAV（P&lt;1e-10）</text>
+<rect x="868" y="538" width="232" height="156" rx="10" fill="#DDF3EE" stroke="#2E9C86" stroke-width="2"/>
+<text x="880" y="560" font-size="12.5" font-weight="700" fill="#2E9C86">发现</text>
+<text x="1088" y="560" font-size="12" text-anchor="end" fill="#6B7280">Fig 1C,E</text>
+<text x="880" y="584" font-size="13" fill="#1F2937">单核细胞最敏感：3996 个 DE 基因</text>
+<text x="880" y="603" font-size="13" fill="#1F2937">（38.3%，其他细胞 12.4–19.6%）；</text>
+<text x="880" y="622" font-size="13" fill="#1F2937">胞内 IAV 转录本高 3–6 倍</text>
+<rect x="1144" y="538" width="232" height="156" rx="10" fill="#DDF3EE" stroke="#2E9C86" stroke-width="2"/>
+<text x="1156" y="560" font-size="12.5" font-weight="700" fill="#2E9C86">发现</text>
+<text x="1364" y="560" font-size="12" text-anchor="end" fill="#6B7280">Fig 1F</text>
+<text x="1156" y="584" font-size="13" fill="#1F2937">各细胞应答整体相关（</text>
+<text x="1156" y="603" font-size="13" fill="#1F2937">r=0.65–0.95），但 NK 与单核共</text>
+<text x="1156" y="622" font-size="13" fill="#1F2937">有的 815 个基因中 135 个（</text>
+<text x="1156" y="641" font-size="13" fill="#1F2937">16.6%）方向相反</text>
+<rect x="1420" y="538" width="232" height="156" rx="10" fill="#EEF0F3" stroke="#7C8696" stroke-width="2"/>
+<text x="1432" y="560" font-size="12.5" font-weight="700" fill="#7C8696">做法</text>
+<text x="1640" y="560" font-size="12" text-anchor="end" fill="#6B7280">Fig 1G</text>
+<text x="1432" y="584" font-size="13" fill="#1F2937">特异性评分：衡量每个基因的应答强</text>
+<text x="1432" y="603" font-size="13" fill="#1F2937">度在细胞间的差异</text>
+<rect x="1696" y="538" width="232" height="156" rx="10" fill="#DDF3EE" stroke="#2E9C86" stroke-width="2"/>
+<text x="1708" y="560" font-size="12.5" font-weight="700" fill="#2E9C86">发现</text>
+<text x="1916" y="560" font-size="12" text-anchor="end" fill="#6B7280">Fig 1G–H</text>
+<text x="1708" y="584" font-size="13" fill="#1F2937">高特异 = 翻译起始、病毒基因表达；</text>
+<text x="1708" y="603" font-size="13" fill="#1F2937">低特异（共享）= I 型 IFN 信号（</text>
+<text x="1708" y="622" font-size="13" fill="#1F2937">FDR&lt;1e-10）</text>
+<rect x="1972" y="538" width="232" height="156" rx="10" fill="#EBE3F8" stroke="#7A5BC4" stroke-width="2"/>
+<text x="1984" y="560" font-size="12.5" font-weight="700" fill="#7A5BC4">结论</text>
+<text x="2192" y="560" font-size="12" text-anchor="end" fill="#6B7280">结论 1</text>
+<text x="1984" y="584" font-size="13" fill="#1F2937">应答 = 共享 IFN 核心 + 细胞特</text>
+<text x="1984" y="603" font-size="13" fill="#1F2937">异外围；必须逐细胞类型分析，</text>
+<text x="1984" y="622" font-size="13" fill="#1F2937">bulk 会漏掉或误导</text>
+<rect x="40" y="908" width="232" height="156" rx="10" fill="#FFF3DC" stroke="#E0A030" stroke-width="2"/>
+<text x="52" y="930" font-size="12.5" font-weight="700" fill="#E0A030">为什么做</text>
+<text x="260" y="930" font-size="12" text-anchor="end" fill="#6B7280">追问</text>
+<text x="52" y="954" font-size="13" fill="#1F2937">应答既共享又特异——祖源改变的是</text>
+<text x="52" y="973" font-size="13" fill="#1F2937">哪些基因、哪些细胞？</text>
+<rect x="316" y="908" width="232" height="156" rx="10" fill="#EEF0F3" stroke="#7C8696" stroke-width="2"/>
+<text x="328" y="930" font-size="12.5" font-weight="700" fill="#7C8696">做法</text>
+<text x="536" y="930" font-size="12" text-anchor="end" fill="#6B7280">Fig 2A</text>
+<text x="328" y="954" font-size="13" fill="#1F2937">表达 ~ 祖源成分比例，校正年龄、</text>
+<text x="328" y="973" font-size="13" fill="#1F2937">批次；mash 借跨细胞相关性提高功</text>
+<text x="328" y="992" font-size="13" fill="#1F2937">效（lfsr&lt;0.10）</text>
+<rect x="592" y="908" width="232" height="156" rx="10" fill="#DDF3EE" stroke="#2E9C86" stroke-width="2"/>
+<text x="604" y="930" font-size="12.5" font-weight="700" fill="#2E9C86">发现</text>
+<text x="812" y="930" font-size="12" text-anchor="end" fill="#6B7280">Fig 2A</text>
+<text x="604" y="954" font-size="13" fill="#1F2937">1949 个人群差异表达基因（NK </text>
+<text x="604" y="973" font-size="13" fill="#1F2937">830 – CD4 T 1235）；同一细胞内</text>
+<text x="604" y="992" font-size="13" fill="#1F2937">多数跨条件共享（52.9–77.4%）</text>
+<rect x="868" y="908" width="232" height="156" rx="10" fill="#DDF3EE" stroke="#2E9C86" stroke-width="2"/>
+<text x="880" y="930" font-size="12.5" font-weight="700" fill="#2E9C86">发现</text>
+<text x="1088" y="930" font-size="12" text-anchor="end" fill="#6B7280">Fig 2B</text>
+<text x="880" y="954" font-size="13" fill="#1F2937">跨细胞高度特异：约 52% 仅出现在</text>
+<text x="880" y="973" font-size="13" fill="#1F2937">1–2 类细胞；五类都有的只有 </text>
+<text x="880" y="992" font-size="13" fill="#1F2937">17.8%(mock)/24.7%(IAV)</text>
+<rect x="1144" y="908" width="232" height="156" rx="10" fill="#E3F3D8" stroke="#5FA33A" stroke-width="2"/>
+<text x="1156" y="930" font-size="12.5" font-weight="700" fill="#5FA33A">验证</text>
+<text x="1364" y="930" font-size="12" text-anchor="end" fill="#6B7280">Fig S2C</text>
+<text x="1156" y="954" font-size="13" fill="#1F2937">对照外部数据：与 Quach 2016 单</text>
+<text x="1156" y="973" font-size="13" fill="#1F2937">核 bulk RNA-seq 一致，r=0.662</text>
+<text x="1156" y="992" font-size="13" fill="#1F2937">(mock)、0.499(IAV)</text>
+<rect x="1420" y="908" width="232" height="156" rx="10" fill="#EEF0F3" stroke="#7C8696" stroke-width="2"/>
+<text x="1432" y="930" font-size="12.5" font-weight="700" fill="#7C8696">做法</text>
+<text x="1640" y="930" font-size="12" text-anchor="end" fill="#6B7280">Fig 2C</text>
+<text x="1432" y="954" font-size="13" fill="#1F2937">Hallmark 基因集富集：祖源差异集</text>
+<text x="1432" y="973" font-size="13" fill="#1F2937">中在哪些通路</text>
+<rect x="1696" y="908" width="232" height="156" rx="10" fill="#DDF3EE" stroke="#2E9C86" stroke-width="2"/>
+<text x="1708" y="930" font-size="12.5" font-weight="700" fill="#2E9C86">发现</text>
+<text x="1916" y="930" font-size="12" text-anchor="end" fill="#6B7280">Fig 2C</text>
+<text x="1708" y="954" font-size="13" fill="#1F2937">单核基线：IFN、TNF/NF-κB、炎症</text>
+<text x="1708" y="973" font-size="13" fill="#1F2937">基因在非洲祖源更高；感染后反转，</text>
+<text x="1708" y="992" font-size="13" fill="#1F2937">IFN-α/γ 在欧洲祖源更高</text>
+<rect x="1972" y="908" width="232" height="156" rx="10" fill="#EBE3F8" stroke="#7A5BC4" stroke-width="2"/>
+<text x="1984" y="930" font-size="12.5" font-weight="700" fill="#7A5BC4">结论</text>
+<text x="2192" y="930" font-size="12" text-anchor="end" fill="#6B7280">结论 2</text>
+<text x="1984" y="954" font-size="13" fill="#1F2937">祖源效应普遍存在、多数细胞特异；</text>
+<text x="1984" y="973" font-size="13" fill="#1F2937">IFN 是跨细胞类型的例外</text>
+<rect x="40" y="1138" width="232" height="156" rx="10" fill="#FFF3DC" stroke="#E0A030" stroke-width="2"/>
+<text x="52" y="1160" font-size="12.5" font-weight="700" fill="#E0A030">为什么做</text>
+<text x="260" y="1160" font-size="12" text-anchor="end" fill="#6B7280">追问</text>
+<text x="52" y="1184" font-size="13" fill="#1F2937">IFN 这条跨细胞的例外：祖源影响</text>
+<text x="52" y="1203" font-size="13" fill="#1F2937">的是有没有应答，还是应答的幅度？</text>
+<rect x="316" y="1138" width="232" height="156" rx="10" fill="#EEF0F3" stroke="#7C8696" stroke-width="2"/>
+<text x="328" y="1160" font-size="12.5" font-weight="700" fill="#7C8696">做法</text>
+<text x="536" y="1160" font-size="12" text-anchor="end" fill="#6B7280">Fig 2D</text>
+<text x="328" y="1184" font-size="13" fill="#1F2937">构建 IFN score：每人 hallmark </text>
+<text x="328" y="1203" font-size="13" fill="#1F2937">IFN-α/γ 基因的平均表达</text>
+<rect x="592" y="1138" width="232" height="156" rx="10" fill="#DDF3EE" stroke="#2E9C86" stroke-width="2"/>
+<text x="604" y="1160" font-size="12.5" font-weight="700" fill="#2E9C86">发现</text>
+<text x="812" y="1160" font-size="12" text-anchor="end" fill="#6B7280">Fig 2D</text>
+<text x="604" y="1184" font-size="13" fill="#1F2937">感染后欧洲祖源 ↑ IFN score（平</text>
+<text x="604" y="1203" font-size="13" fill="#1F2937">均 r=-0.26，meta-P=2.9e-6）；</text>
+<text x="604" y="1222" font-size="13" fill="#1F2937">mock 无关（r=-0.0045，P=0.746）</text>
+<rect x="868" y="1138" width="232" height="156" rx="10" fill="#DDF3EE" stroke="#2E9C86" stroke-width="2"/>
+<text x="880" y="1160" font-size="12.5" font-weight="700" fill="#2E9C86">发现</text>
+<text x="1088" y="1160" font-size="12" text-anchor="end" fill="#6B7280">Fig S3</text>
+<text x="880" y="1184" font-size="13" fill="#1F2937">445 个 popDR 基因（应答幅度与</text>
+<text x="880" y="1203" font-size="13" fill="#1F2937">祖源相关；单核 272 个，其余 </text>
+<text x="880" y="1222" font-size="13" fill="#1F2937">53–181）；欧洲祖源 IFN 应答幅</text>
+<text x="880" y="1241" font-size="13" fill="#1F2937">度更强（r=-0.23）</text>
+<rect x="1144" y="1138" width="232" height="156" rx="10" fill="#E3F3D8" stroke="#5FA33A" stroke-width="2"/>
+<text x="1156" y="1160" font-size="12.5" font-weight="700" fill="#5FA33A">验证</text>
+<text x="1364" y="1160" font-size="12" text-anchor="end" fill="#6B7280">Fig S3C</text>
+<text x="1156" y="1184" font-size="13" fill="#1F2937">排除：基线 IAV 特异 IgG（既往暴</text>
+<text x="1156" y="1203" font-size="13" fill="#1F2937">露的代理）与祖源无关；HLA 基因</text>
+<text x="1156" y="1222" font-size="13" fill="#1F2937">型也不能解释</text>
+<rect x="1420" y="1138" width="232" height="156" rx="10" fill="#DDF3EE" stroke="#2E9C86" stroke-width="2"/>
+<text x="1432" y="1160" font-size="12.5" font-weight="700" fill="#2E9C86">发现</text>
+<text x="1640" y="1160" font-size="12" text-anchor="end" fill="#6B7280">Fig 2E</text>
+<text x="1432" y="1184" font-size="13" fill="#1F2937">IFN 应答越强，胞内 IAV 转录本越</text>
+<text x="1432" y="1203" font-size="13" fill="#1F2937">多（adj R²=0.55）；欧洲祖源者 </text>
+<text x="1432" y="1222" font-size="13" fill="#1F2937">IAV 转录本也更高（P=0.002）</text>
+<rect x="1696" y="1138" width="232" height="156" rx="10" fill="#EBE3F8" stroke="#7A5BC4" stroke-width="2"/>
+<text x="1708" y="1160" font-size="12.5" font-weight="700" fill="#7A5BC4">结论</text>
+<text x="1916" y="1160" font-size="12" text-anchor="end" fill="#6B7280">结论 3</text>
+<text x="1708" y="1184" font-size="13" fill="#1F2937">欧洲祖源者感染后早期 I 型 IFN </text>
+<text x="1708" y="1203" font-size="13" fill="#1F2937">更强、幅度也更强，不是既往暴露或</text>
+<text x="1708" y="1222" font-size="13" fill="#1F2937">HLA 造成</text>
+<rect x="1972" y="1138" width="232" height="156" rx="10" fill="#FBE4E1" stroke="#D2554A" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="1984" y="1160" font-size="12.5" font-weight="700" fill="#D2554A">局限</text>
+<text x="2192" y="1160" font-size="12" text-anchor="end" fill="#6B7280">我的判断</text>
+<text x="1984" y="1184" font-size="13" fill="#1F2937">我的判断：IFN 与病毒转录本正相</text>
+<text x="1984" y="1203" font-size="13" fill="#1F2937">关，可能是「感染多→IFN 高」的反</text>
+<text x="1984" y="1222" font-size="13" fill="#1F2937">向关系，不能直接说 IFN 导致病毒</text>
+<text x="1984" y="1241" font-size="13" fill="#1F2937">少 → 需要功能验证</text>
+<rect x="40" y="1368" width="232" height="156" rx="10" fill="#FFF3DC" stroke="#E0A030" stroke-width="2"/>
+<text x="52" y="1390" font-size="12.5" font-weight="700" fill="#E0A030">为什么做</text>
+<text x="260" y="1390" font-size="12" text-anchor="end" fill="#6B7280">追问</text>
+<text x="52" y="1414" font-size="13" fill="#1F2937">IFN 强到底有没有保护作用？上一</text>
+<text x="52" y="1433" font-size="13" fill="#1F2937">步只是相关</text>
+<rect x="316" y="1368" width="232" height="156" rx="10" fill="#EEF0F3" stroke="#7C8696" stroke-width="2"/>
+<text x="328" y="1390" font-size="12.5" font-weight="700" fill="#7C8696">做法</text>
+<text x="536" y="1390" font-size="12" text-anchor="end" fill="#6B7280">Fig 2F–G</text>
+<text x="328" y="1414" font-size="13" fill="#1F2937">取 IFN 应答最强与最弱各 10 人，</text>
+<text x="328" y="1433" font-size="13" fill="#1F2937">PBMC 再感染；48h 内 8 个时间点</text>
+<text x="328" y="1452" font-size="13" fill="#1F2937">测分泌型 IFN，24/48 hpi 测病毒</text>
+<text x="328" y="1471" font-size="13" fill="#1F2937">滴度</text>
+<rect x="592" y="1368" width="232" height="156" rx="10" fill="#DDF3EE" stroke="#2E9C86" stroke-width="2"/>
+<text x="604" y="1390" font-size="12.5" font-weight="700" fill="#2E9C86">发现</text>
+<text x="812" y="1390" font-size="12" text-anchor="end" fill="#6B7280">Fig 2F</text>
+<text x="604" y="1414" font-size="13" fill="#1F2937">高应答者 IFN-α2 多 4 倍、IFN-β</text>
+<text x="604" y="1433" font-size="13" fill="#1F2937">多 11.6 倍（48 hpi），自 12 </text>
+<text x="604" y="1452" font-size="13" fill="#1F2937">hpi 起显著</text>
+<rect x="868" y="1368" width="232" height="156" rx="10" fill="#DDF3EE" stroke="#2E9C86" stroke-width="2"/>
+<text x="880" y="1390" font-size="12.5" font-weight="700" fill="#2E9C86">发现</text>
+<text x="1088" y="1390" font-size="12" text-anchor="end" fill="#6B7280">Fig 2G</text>
+<text x="880" y="1414" font-size="13" fill="#1F2937">病毒滴度更低：24 hpi P=0.001，</text>
+<text x="880" y="1433" font-size="13" fill="#1F2937">48 hpi P=0.004</text>
+<rect x="1144" y="1368" width="232" height="156" rx="10" fill="#E3F3D8" stroke="#5FA33A" stroke-width="2"/>
+<text x="1156" y="1390" font-size="12.5" font-weight="700" fill="#5FA33A">验证</text>
+<text x="1364" y="1390" font-size="12" text-anchor="end" fill="#6B7280">补充</text>
+<text x="1156" y="1414" font-size="13" fill="#1F2937">排除：20 人均无 I 型 IFN 通路</text>
+<text x="1156" y="1433" font-size="13" fill="#1F2937">的预测功能缺失突变 → 不是罕见变</text>
+<text x="1156" y="1452" font-size="13" fill="#1F2937">异驱动</text>
+<rect x="1420" y="1368" width="232" height="156" rx="10" fill="#E3F3D8" stroke="#5FA33A" stroke-width="2"/>
+<text x="1432" y="1390" font-size="12.5" font-weight="700" fill="#5FA33A">验证</text>
+<text x="1640" y="1390" font-size="12" text-anchor="end" fill="#6B7280">文献</text>
+<text x="1432" y="1414" font-size="13" fill="#1F2937">与人类免疫缺陷研究一致：I 型 </text>
+<text x="1432" y="1433" font-size="13" fill="#1F2937">IFN 缺陷者难以控制病毒，流感风</text>
+<text x="1432" y="1452" font-size="13" fill="#1F2937">险更高</text>
+<rect x="1696" y="1368" width="232" height="156" rx="10" fill="#EBE3F8" stroke="#7A5BC4" stroke-width="2"/>
+<text x="1708" y="1390" font-size="12.5" font-weight="700" fill="#7A5BC4">结论</text>
+<text x="1916" y="1390" font-size="12" text-anchor="end" fill="#6B7280">结论 4</text>
+<text x="1708" y="1414" font-size="13" fill="#1F2937">早期 IFN 强 → 后期病毒复制少；</text>
+<text x="1708" y="1433" font-size="13" fill="#1F2937">串起来：欧洲祖源 → 早期 IFN ↑ </text>
+<text x="1708" y="1452" font-size="13" fill="#1F2937">→ 滴度 ↓</text>
+<rect x="1972" y="1368" width="232" height="156" rx="10" fill="#FBE4E1" stroke="#D2554A" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="1984" y="1390" font-size="12.5" font-weight="700" fill="#D2554A">局限</text>
+<text x="2192" y="1390" font-size="12" text-anchor="end" fill="#6B7280">我的判断</text>
+<text x="1984" y="1414" font-size="13" fill="#1F2937">我的判断：n=20 且按 IFN 极端分</text>
+<text x="1984" y="1433" font-size="13" fill="#1F2937">组，没有直接按祖源比较；祖源→滴</text>
+<text x="1984" y="1452" font-size="13" fill="#1F2937">度是两步拼接，证据中等偏弱</text>
+<rect x="40" y="1738" width="232" height="156" rx="10" fill="#FFF3DC" stroke="#E0A030" stroke-width="2"/>
+<text x="52" y="1760" font-size="12.5" font-weight="700" fill="#E0A030">为什么做</text>
+<text x="260" y="1760" font-size="12" text-anchor="end" fill="#6B7280">追问</text>
+<text x="52" y="1784" font-size="13" fill="#1F2937">祖源差异从哪来？遗传（cis 变异）</text>
+<text x="52" y="1803" font-size="13" fill="#1F2937">还是环境？</text>
+<rect x="316" y="1738" width="232" height="156" rx="10" fill="#EEF0F3" stroke="#7C8696" stroke-width="2"/>
+<text x="328" y="1760" font-size="12.5" font-weight="700" fill="#7C8696">做法</text>
+<text x="536" y="1760" font-size="12" text-anchor="end" fill="#6B7280">Fig 3A</text>
+<text x="328" y="1784" font-size="13" fill="#1F2937">每个细胞类型×条件做 cis eQTL（</text>
+<text x="328" y="1803" font-size="13" fill="#1F2937">基因体 ±100 kb），mash 跨条件</text>
+<text x="328" y="1822" font-size="13" fill="#1F2937">共享，lfsr&lt;0.10</text>
+<rect x="592" y="1738" width="232" height="156" rx="10" fill="#DDF3EE" stroke="#2E9C86" stroke-width="2"/>
+<text x="604" y="1760" font-size="12.5" font-weight="700" fill="#2E9C86">发现</text>
+<text x="812" y="1760" font-size="12" text-anchor="end" fill="#6B7280">Fig 3A</text>
+<text x="604" y="1784" font-size="13" fill="#1F2937">共 2234 个 eGene</text>
+<rect x="868" y="1738" width="232" height="156" rx="10" fill="#E3F3D8" stroke="#5FA33A" stroke-width="2"/>
+<text x="880" y="1760" font-size="12.5" font-weight="700" fill="#5FA33A">验证</text>
+<text x="1088" y="1760" font-size="12" text-anchor="end" fill="#6B7280">Fig S4A–B</text>
+<text x="880" y="1784" font-size="13" fill="#1F2937">同样本 bulk RNA-seq 独立验证：</text>
+<text x="880" y="1803" font-size="13" fill="#1F2937">eGene 效应量 adj R² ≈ 0.71</text>
+<rect x="1144" y="1738" width="232" height="156" rx="10" fill="#DDF3EE" stroke="#2E9C86" stroke-width="2"/>
+<text x="1156" y="1760" font-size="12.5" font-weight="700" fill="#2E9C86">发现</text>
+<text x="1364" y="1760" font-size="12" text-anchor="end" fill="#6B7280">Fig 3B</text>
+<text x="1156" y="1784" font-size="13" fill="#1F2937">45% 的变异跨细胞/条件共享；每类</text>
+<text x="1156" y="1803" font-size="13" fill="#1F2937">细胞 13–24% 仅一个条件；29 个 </text>
+<text x="1156" y="1822" font-size="13" fill="#1F2937">eGene 只在感染后出现（OAS1、</text>
+<text x="1156" y="1841" font-size="13" fill="#1F2937">IFI44L、IFIT1、IRF1、ISG15）</text>
+<rect x="1420" y="1738" width="232" height="156" rx="10" fill="#DDF3EE" stroke="#2E9C86" stroke-width="2"/>
+<text x="1432" y="1760" font-size="12.5" font-weight="700" fill="#2E9C86">发现</text>
+<text x="1640" y="1760" font-size="12" text-anchor="end" fill="#6B7280">Fig 3C</text>
+<text x="1432" y="1784" font-size="13" fill="#1F2937">eGene 是 popDE 的概率比随机高 </text>
+<text x="1432" y="1803" font-size="13" fill="#1F2937">3.2–6.5 倍；IFN 相关 popDE 高 </text>
+<text x="1432" y="1822" font-size="13" fill="#1F2937">1.3–5.0 倍</text>
+<rect x="1696" y="1738" width="232" height="156" rx="10" fill="#EBE3F8" stroke="#7A5BC4" stroke-width="2"/>
+<text x="1708" y="1760" font-size="12.5" font-weight="700" fill="#7A5BC4">结论</text>
+<text x="1916" y="1760" font-size="12" text-anchor="end" fill="#6B7280">结论 5</text>
+<text x="1708" y="1784" font-size="13" fill="#1F2937">祖源差异有明显遗传成分，可能来自</text>
+<text x="1708" y="1803" font-size="13" fill="#1F2937">eQTL 等位基因频率的人群分化</text>
+<rect x="40" y="1968" width="232" height="156" rx="10" fill="#FFF3DC" stroke="#E0A030" stroke-width="2"/>
+<text x="52" y="1990" font-size="12.5" font-weight="700" fill="#E0A030">为什么做</text>
+<text x="260" y="1990" font-size="12" text-anchor="end" fill="#6B7280">追问</text>
+<text x="52" y="2014" font-size="13" fill="#1F2937">这个遗传成分有多大？频率分化能解</text>
+<text x="52" y="2033" font-size="13" fill="#1F2937">释多少？</text>
+<rect x="316" y="1968" width="232" height="156" rx="10" fill="#EEF0F3" stroke="#7C8696" stroke-width="2"/>
+<text x="328" y="1990" font-size="12.5" font-weight="700" fill="#7C8696">做法</text>
+<text x="536" y="1990" font-size="12" text-anchor="end" fill="#6B7280">Fig 3D</text>
+<text x="328" y="2014" font-size="13" fill="#1F2937">只取 popDE∩eGene 的 835 个基因：</text>
+<text x="328" y="2033" font-size="13" fill="#1F2937">top eQTL 效应量 × 每人基因型剂</text>
+<text x="328" y="2052" font-size="13" fill="#1F2937">量(0/1/2) → 预测祖源效应，与观</text>
+<text x="328" y="2071" font-size="13" fill="#1F2937">察值比较</text>
+<rect x="592" y="1968" width="232" height="156" rx="10" fill="#DDF3EE" stroke="#2E9C86" stroke-width="2"/>
+<text x="604" y="1990" font-size="12.5" font-weight="700" fill="#2E9C86">发现</text>
+<text x="812" y="1990" font-size="12" text-anchor="end" fill="#6B7280">Fig 3D</text>
+<text x="604" y="2014" font-size="13" fill="#1F2937">平均解释祖源效应方差的 52.5%(</text>
+<text x="604" y="2033" font-size="13" fill="#1F2937">mock) / 53.6%(IAV)</text>
+<rect x="868" y="1968" width="232" height="156" rx="10" fill="#EBE3F8" stroke="#7A5BC4" stroke-width="2"/>
+<text x="880" y="1990" font-size="12.5" font-weight="700" fill="#7A5BC4">结论</text>
+<text x="1088" y="1990" font-size="12" text-anchor="end" fill="#6B7280">结论 6</text>
+<text x="880" y="2014" font-size="13" fill="#1F2937">有 eQTL 的 popDE 基因中，过半</text>
+<text x="880" y="2033" font-size="13" fill="#1F2937">的人群差异来自 cis 调控变异的频</text>
+<text x="880" y="2052" font-size="13" fill="#1F2937">率差异</text>
+<rect x="1144" y="1968" width="232" height="156" rx="10" fill="#FBE4E1" stroke="#D2554A" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="1156" y="1990" font-size="12.5" font-weight="700" fill="#D2554A">局限</text>
+<text x="1364" y="1990" font-size="12" text-anchor="end" fill="#6B7280">我的判断</text>
+<text x="1156" y="2014" font-size="13" fill="#1F2937">局限：约一半 popDE 基因没找到 </text>
+<text x="1156" y="2033" font-size="13" fill="#1F2937">eQTL（trans / 功效不足 / 与祖</text>
+<text x="1156" y="2052" font-size="13" fill="#1F2937">源相关的环境）；我的判断：top </text>
+<text x="1156" y="2071" font-size="13" fill="#1F2937">SNP 预测可能高估</text>
+<rect x="40" y="2198" width="232" height="156" rx="10" fill="#FFF3DC" stroke="#E0A030" stroke-width="2"/>
+<text x="52" y="2220" font-size="12.5" font-weight="700" fill="#E0A030">为什么做</text>
+<text x="260" y="2220" font-size="12" text-anchor="end" fill="#6B7280">追问</text>
+<text x="52" y="2244" font-size="13" fill="#1F2937">频率分化是漂变（放松约束），还是</text>
+<text x="52" y="2263" font-size="13" fill="#1F2937">自然选择？同一通路多基因方向一致</text>
+<text x="52" y="2282" font-size="13" fill="#1F2937">才像选择</text>
+<rect x="316" y="2198" width="232" height="156" rx="10" fill="#DDF3EE" stroke="#2E9C86" stroke-width="2"/>
+<text x="328" y="2220" font-size="12.5" font-weight="700" fill="#2E9C86">发现</text>
+<text x="536" y="2220" font-size="12" text-anchor="end" fill="#6B7280">Fig 3E</text>
+<text x="328" y="2244" font-size="13" fill="#1F2937">popDE∩eGene 做 GO 富集（</text>
+<text x="328" y="2263" font-size="13" fill="#1F2937">ClueGO）：转录/翻译通路显著，核</text>
+<text x="328" y="2282" font-size="13" fill="#1F2937">糖体小亚基生物发生、病毒转录 </text>
+<text x="328" y="2301" font-size="13" fill="#1F2937">FDR&lt;3e-10</text>
+<rect x="592" y="2198" width="232" height="156" rx="10" fill="#EEF0F3" stroke="#7C8696" stroke-width="2"/>
+<text x="604" y="2220" font-size="12.5" font-weight="700" fill="#7C8696">做法</text>
+<text x="812" y="2220" font-size="12" text-anchor="end" fill="#6B7280">Fig 3F</text>
+<text x="604" y="2244" font-size="13" fill="#1F2937">检验通路内 popDE 效应量中位数：</text>
+<text x="604" y="2263" font-size="13" fill="#1F2937">中性=方向随机，选择=方向一致；</text>
+<text x="604" y="2282" font-size="13" fill="#1F2937">置换得 P；10 个细胞×条件</text>
+<rect x="868" y="2198" width="232" height="156" rx="10" fill="#DDF3EE" stroke="#2E9C86" stroke-width="2"/>
+<text x="880" y="2220" font-size="12.5" font-weight="700" fill="#2E9C86">发现</text>
+<text x="1088" y="2220" font-size="12" text-anchor="end" fill="#6B7280">Fig 3F–G</text>
+<text x="880" y="2244" font-size="13" fill="#1F2937">RP 相关通路在各细胞类型一致偏向</text>
+<text x="880" y="2263" font-size="13" fill="#1F2937">欧洲祖源更高，mock 与 IAV 都如</text>
+<text x="880" y="2282" font-size="13" fill="#1F2937">此</text>
+<rect x="1144" y="2198" width="232" height="156" rx="10" fill="#E3F3D8" stroke="#5FA33A" stroke-width="2"/>
+<text x="1156" y="2220" font-size="12.5" font-weight="700" fill="#5FA33A">验证</text>
+<text x="1364" y="2220" font-size="12" text-anchor="end" fill="#6B7280">Fig 3F–G</text>
+<text x="1156" y="2244" font-size="13" fill="#1F2937">排除环境：回归掉每基因 top cis </text>
+<text x="1156" y="2263" font-size="13" fill="#1F2937">SNP 后偏倚消失（病毒转录 33–41</text>
+<text x="1156" y="2282" font-size="13" fill="#1F2937">基因）→ 来自 cis 变异</text>
+<rect x="1420" y="2198" width="232" height="156" rx="10" fill="#E3F3D8" stroke="#5FA33A" stroke-width="2"/>
+<text x="1432" y="2220" font-size="12.5" font-weight="700" fill="#5FA33A">验证</text>
+<text x="1640" y="2220" font-size="12" text-anchor="end" fill="#6B7280">Fig 3H</text>
+<text x="1432" y="2244" font-size="13" fill="#1F2937">RP eGene 表达与 IAV 转录本相关：</text>
+<text x="1432" y="2263" font-size="13" fill="#1F2937">CD8 T r=0.32（P=0.002），单核 </text>
+<text x="1432" y="2282" font-size="13" fill="#1F2937">r=0.58</text>
+<rect x="1696" y="2198" width="232" height="156" rx="10" fill="#EBE3F8" stroke="#7A5BC4" stroke-width="2"/>
+<text x="1708" y="2220" font-size="12.5" font-weight="700" fill="#7A5BC4">结论</text>
+<text x="1916" y="2220" font-size="12" text-anchor="end" fill="#6B7280">结论 7</text>
+<text x="1708" y="2244" font-size="13" fill="#1F2937">与 RP 通路的多基因选择一致；RP </text>
+<text x="1708" y="2263" font-size="13" fill="#1F2937">参与病毒翻译（immunoribosome </text>
+<text x="1708" y="2282" font-size="13" fill="#1F2937">假说）</text>
+<rect x="1972" y="2198" width="232" height="156" rx="10" fill="#FBE4E1" stroke="#D2554A" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="1984" y="2220" font-size="12.5" font-weight="700" fill="#D2554A">局限</text>
+<text x="2192" y="2220" font-size="12" text-anchor="end" fill="#6B7280">我的判断</text>
+<text x="1984" y="2244" font-size="13" fill="#1F2937">我的判断：没有中性模型或全基因组</text>
+<text x="1984" y="2263" font-size="13" fill="#1F2937">背景对照，只能说「一致于」，不是</text>
+<text x="1984" y="2282" font-size="13" fill="#1F2937">证明；相关≠因果</text>
+<rect x="40" y="2568" width="232" height="156" rx="10" fill="#FFF3DC" stroke="#E0A030" stroke-width="2"/>
+<text x="52" y="2590" font-size="12.5" font-weight="700" fill="#E0A030">为什么做</text>
+<text x="260" y="2590" font-size="12" text-anchor="end" fill="#6B7280">追问</text>
+<text x="52" y="2614" font-size="13" fill="#1F2937">这些祖源差异基因与疾病结局有关吗？</text>
+<text x="52" y="2633" font-size="13" fill="#1F2937">用 COVID-19 检验（同为单链 RNA</text>
+<text x="52" y="2652" font-size="13" fill="#1F2937">病毒，通路大量重叠）</text>
+<rect x="316" y="2568" width="232" height="156" rx="10" fill="#EEF0F3" stroke="#7C8696" stroke-width="2"/>
+<text x="328" y="2590" font-size="12.5" font-weight="700" fill="#7C8696">做法</text>
+<text x="536" y="2590" font-size="12" text-anchor="end" fill="#6B7280">Fig 4</text>
+<text x="328" y="2614" font-size="13" fill="#1F2937">重分析 Su 等 2020：505,616 个 </text>
+<text x="328" y="2633" font-size="13" fill="#1F2937">PBMC、129 名患者（QC 后 127），</text>
+<text x="328" y="2652" font-size="13" fill="#1F2937">WOS 严重度；校正年龄、性别、种</text>
+<text x="328" y="2671" font-size="13" fill="#1F2937">族</text>
+<rect x="592" y="2568" width="232" height="156" rx="10" fill="#DDF3EE" stroke="#2E9C86" stroke-width="2"/>
+<text x="604" y="2590" font-size="12.5" font-weight="700" fill="#2E9C86">发现</text>
+<text x="812" y="2590" font-size="12" text-anchor="end" fill="#6B7280">Fig 4A</text>
+<text x="604" y="2614" font-size="13" fill="#1F2937">单核细胞的严重度基因最多：839 </text>
+<text x="604" y="2633" font-size="13" fill="#1F2937">个（lfsr&lt;0.01）</text>
+<rect x="868" y="2568" width="232" height="156" rx="10" fill="#DDF3EE" stroke="#2E9C86" stroke-width="2"/>
+<text x="880" y="2590" font-size="12.5" font-weight="700" fill="#2E9C86">发现</text>
+<text x="1088" y="2590" font-size="12" text-anchor="end" fill="#6B7280">Fig 4B–C</text>
+<text x="880" y="2614" font-size="13" fill="#1F2937">严重度正相关基因是 popDE 的 </text>
+<text x="880" y="2633" font-size="13" fill="#1F2937">2.0–2.2 倍（Fisher+置换，</text>
+<text x="880" y="2652" font-size="13" fill="#1F2937">P=2.7e-8/3.5e-6）；fgsea 也富</text>
+<text x="880" y="2671" font-size="13" fill="#1F2937">集</text>
+<rect x="1144" y="2568" width="232" height="156" rx="10" fill="#DDF3EE" stroke="#2E9C86" stroke-width="2"/>
+<text x="1156" y="2590" font-size="12.5" font-weight="700" fill="#2E9C86">发现</text>
+<text x="1364" y="2590" font-size="12" text-anchor="end" fill="#6B7280">Fig 4D</text>
+<text x="1156" y="2614" font-size="13" fill="#1F2937">严重度基因 69% 在欧洲祖源更高，</text>
+<text x="1156" y="2633" font-size="13" fill="#1F2937">对比全体 popDE 的 49%（</text>
+<text x="1156" y="2652" font-size="13" fill="#1F2937">P=5.5e-4/2.4e-3）</text>
+<rect x="1420" y="2568" width="232" height="156" rx="10" fill="#DDF3EE" stroke="#2E9C86" stroke-width="2"/>
+<text x="1432" y="2590" font-size="12.5" font-weight="700" fill="#2E9C86">发现</text>
+<text x="1640" y="2590" font-size="12" text-anchor="end" fill="#6B7280">Fig 4E–F</text>
+<text x="1432" y="2614" font-size="13" fill="#1F2937">S100A4/A6/A8 在感染早期欧洲祖</text>
+<text x="1432" y="2633" font-size="13" fill="#1F2937">源更高，且与严重度相关</text>
+<rect x="1696" y="2568" width="232" height="156" rx="10" fill="#EBE3F8" stroke="#7A5BC4" stroke-width="2"/>
+<text x="1708" y="2590" font-size="12.5" font-weight="700" fill="#7A5BC4">结论</text>
+<text x="1916" y="2590" font-size="12" text-anchor="end" fill="#6B7280">结论 8</text>
+<text x="1708" y="2614" font-size="13" fill="#1F2937">祖源差异可能经这些基因，贡献 </text>
+<text x="1708" y="2633" font-size="13" fill="#1F2937">COVID-19 的人群差异</text>
+<rect x="1972" y="2568" width="232" height="156" rx="10" fill="#FBE4E1" stroke="#D2554A" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="1984" y="2590" font-size="12.5" font-weight="700" fill="#D2554A">局限</text>
+<text x="2192" y="2590" font-size="12" text-anchor="end" fill="#6B7280">我的判断</text>
+<text x="1984" y="2614" font-size="13" fill="#1F2937">局限：IAV 体外 6h ≠ 病人；效应</text>
+<text x="1984" y="2633" font-size="13" fill="#1F2937">方向会随病程反转（早期上调保护，</text>
+<text x="1984" y="2652" font-size="13" fill="#1F2937">延迟/晚期上调与重症相关），S100</text>
+<text x="1984" y="2671" font-size="13" fill="#1F2937">方向要谨慎</text>
+<rect x="40" y="2938" width="232" height="156" rx="10" fill="#EBE3F8" stroke="#7A5BC4" stroke-width="2"/>
+<text x="52" y="2960" font-size="12.5" font-weight="700" fill="#7A5BC4">结论</text>
+<text x="260" y="2960" font-size="12" text-anchor="end" fill="#6B7280">总结 1</text>
+<text x="52" y="2984" font-size="13" fill="#1F2937">祖源效应普遍但细胞特异，IFN 是</text>
+<text x="52" y="3003" font-size="13" fill="#1F2937">例外 → 欧洲祖源早期 I 型 IFN </text>
+<text x="52" y="3022" font-size="13" fill="#1F2937">更强，可预测后期病毒更少</text>
+<rect x="316" y="2938" width="232" height="156" rx="10" fill="#EBE3F8" stroke="#7A5BC4" stroke-width="2"/>
+<text x="328" y="2960" font-size="12.5" font-weight="700" fill="#7A5BC4">结论</text>
+<text x="536" y="2960" font-size="12" text-anchor="end" fill="#6B7280">总结 2</text>
+<text x="328" y="2984" font-size="13" fill="#1F2937">约 53% 的差异由 cis 变异频率分</text>
+<text x="328" y="3003" font-size="13" fill="#1F2937">化解释；约一半 popDE 无 eQTL →</text>
+<text x="328" y="3022" font-size="13" fill="#1F2937">还有 trans 或环境</text>
+<rect x="592" y="2938" width="232" height="156" rx="10" fill="#EBE3F8" stroke="#7A5BC4" stroke-width="2"/>
+<text x="604" y="2960" font-size="12.5" font-weight="700" fill="#7A5BC4">结论</text>
+<text x="812" y="2960" font-size="12" text-anchor="end" fill="#6B7280">总结 3</text>
+<text x="604" y="2984" font-size="13" fill="#1F2937">RP 是最好的多基因选择候选，也是</text>
+<text x="604" y="3003" font-size="13" fill="#1F2937">少见的有功能基因组数据支持的例子</text>
+<rect x="868" y="2938" width="232" height="156" rx="10" fill="#EBE3F8" stroke="#7A5BC4" stroke-width="2"/>
+<text x="880" y="2960" font-size="12.5" font-weight="700" fill="#7A5BC4">结论</text>
+<text x="1088" y="2960" font-size="12" text-anchor="end" fill="#6B7280">总结 4</text>
+<text x="880" y="2984" font-size="13" fill="#1F2937">祖源差异基因富集在 COVID 严重度</text>
+<text x="880" y="3003" font-size="13" fill="#1F2937">基因中 → 可能叠加环境性健康差异</text>
+<rect x="1144" y="2938" width="232" height="156" rx="10" fill="#FFF3DC" stroke="#E0A030" stroke-width="2"/>
+<text x="1156" y="2960" font-size="12.5" font-weight="700" fill="#E0A030">为什么做</text>
+<text x="1364" y="2960" font-size="12" text-anchor="end" fill="#6B7280">未解决</text>
+<text x="1156" y="2984" font-size="13" fill="#1F2937">早期差异是否转化为患者结局？是否</text>
+<text x="1156" y="3003" font-size="13" fill="#1F2937">延伸到适应性免疫、病毒清除与重症？</text>
+<text x="1156" y="3022" font-size="13" fill="#1F2937">时间反转如何影响？</text>
+<text x="40" y="3140" font-size="13" fill="#6B7280">证据强度（我的判断）：结论 1、2、5 强；结论 3、6 中强；结论 4、7、8 中弱。数字来自正文与补充材料，红色框是我加的评注。</text>
+</svg>
